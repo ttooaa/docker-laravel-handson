@@ -2,5 +2,5 @@
 @extends('layouts.base')
 
 @section('content')
-    <h1>LPです</h1>
+    <img class="main-back" src="images/back-A.jpg" alt="メイン画面">
 @endsection

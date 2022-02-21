@@ -16,7 +16,6 @@
 
     <main>
         @yield('content')
-        @yield('user_index')
     </main>
 
     <footer>

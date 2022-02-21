@@ -11,10 +11,14 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 4px;
+    padding: 0 175px 0 150px;
+    height: 75px;
+    align-items: center;
+    background-color: white;
 }
 .header-logo {
-    width: 448px;
+    width: 300px;
+    margin-top: 10px;
 }
 header ul {
     display: flex;
@@ -24,8 +28,29 @@ header li {
     margin-left: 30px;
 }
 header a {
-    color: black;
+    color:black;
     text-decoration: none;
 }
 
+/* メイン */
+.main-back {
+    height: 850px;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* フッター */
+footer {
+    position: relative;
+    height: 75px;
+    background-color:rgb(255, 255, 255);
+}
+footer p {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+}
+.footer-logo {
+    width: 150px;
+    margin-left: 162px;
+}
