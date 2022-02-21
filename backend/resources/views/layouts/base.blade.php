@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>キョウノワダイ</title>
     <meta name="description" contents="皆さんが楽しめるワダイを提供します">
+    <title>キョウノワダイ</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
