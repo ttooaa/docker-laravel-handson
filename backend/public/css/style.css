@@ -12,13 +12,17 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 175px 0 150px;
-    height: 75px;
+    height: px;
+    width: 100%;
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
     align-items: center;
     background-color: white;
 }
 .header-logo {
     width: 300px;
-    margin-top: 10px;
 }
 header ul {
     display: flex;
@@ -37,13 +41,14 @@ header a {
     height: 850px;
     width: 100%;
     object-fit: cover;
+    object-position: 50% 40%;
 }
 
 /* フッター */
 footer {
     position: relative;
     height: 75px;
-    background-color:rgb(255, 255, 255);
+    background-color: white;
 }
 footer p {
     position: absolute;
