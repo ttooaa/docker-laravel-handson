@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <header>
+    <header class="wrapper">
         @include('includes.header')
     </header>
 
-    <main>
+    <main class="wrapper">
         @yield('content')
     </main>
 
-    <footer>
+    <footer class="wrapper">
         @include('includes.footer')
     </footer>
 </body>
