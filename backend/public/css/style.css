@@ -14,9 +14,10 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 175px 0 150px;
-    height: 75px;
+    height: 85px;
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
     position: fixed; /* ウィンドウを基準に画面に固定 */
+    z-index: 100;
     top: 0; /* 上下の固定位置を上から0pxにする */
     left: 0; /* 左右の固定位置を左から0pxにする */
     align-items: center;
@@ -55,9 +56,58 @@ footer p {
 
 /* メイン */
 .home-top {
-    padding-top: 80px;
-    height: 850px;
+    background-image: url("../images/back-A.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    background-color: #dcdcdc;
+    text-align: center;
+    height: 930px;
     width: 100%;
+}
+.home-top h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 42px;
+    margin: auto;
+    padding: 160px 0 5px 0;
+    color: white;
+    display: inline-block;
+    background: linear-gradient(90deg, #fff0ff, #e8ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-top h1 {
+    font-family: "ＭＳ 明朝",serif;
+    font-size: 55px;
+    margin: auto;
+}
+#cloud-box {
+    position: relative;
+}
+.cloud, .fontA, .fontB {
+    position: absolute;
+}
+.font {
+    width: 320px;
+    height: 65px;
     object-fit: cover;
-    object-position: 50% 40%;
+    object-position: 0 100%;
+    transform: rotate(-10deg);
+}
+.cloud {
+    z-index: 0;
+    right: 0%;
+    top: 200px;
+    opacity: 0.9;
+}
+.fontA {
+    z-index: 10;
+    right: 6%;
+    top: 415px;
+}
+.fontB {
+    z-index: 20;
+    right: 3.25%;
+    top: 460px;
 }
