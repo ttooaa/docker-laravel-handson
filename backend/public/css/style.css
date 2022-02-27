@@ -8,6 +8,10 @@ img {
 .wrapper{
     width: 100%;
 }
+p {
+    font-family: 'Kiwi Maru', serif;
+}
+
 /* ヘッダー */
 header {
     display: flex;
@@ -62,14 +66,13 @@ footer p {
     background-position: 0 -100px;
     background-color: #dcdcdc;
     text-align: center;
-    height: 930px;
-    width: 100%;
+    height: 940px;
 }
 .home-top h3 {
     font-family: "Arial", sans-serif;
     font-size: 42px;
     margin: auto;
-    padding: 160px 0 5px 0;
+    padding: 150px 0 5px 0;
     color: white;
     display: inline-block;
     background: linear-gradient(90deg, #fff0ff, #e8ffff);
@@ -119,7 +122,6 @@ footer p {
     background-color: white;
     text-align: center;
     height: 820px;
-    width: 100%;
     position: relative;
 }
 .home-parts, .people {
@@ -128,7 +130,6 @@ footer p {
 .opacity-1 {
     background: rgb(255, 255, 255, 0.325);
     height: 820px;
-    width: 100%;
 }
 .home-parts {
     display: inline-block;
@@ -189,18 +190,18 @@ footer p {
 }
 .home-parts h3 {
     margin: 33px 0 22px 10px;
-    font-size: 25px;
+    font-size: 28px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .home-parts p {
     margin-left: 70px;
     margin-right: 70px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .home-bottom {
     margin-top: 60px;
     background-color: white;
-    width: 100%;
     height: 1400px;
 }
 .home-bottom h1 {
@@ -247,15 +248,15 @@ footer p {
 }
 .worry-block p {
     color: white;
-    font-size: 20px;
-    font-weight: 100px;
+    font-size: 22px;
     margin: 10px 0 0 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .worry-block h3 {
     color: #FAFF00;
     font-size: 32px;
-    font-weight: 100px;
     margin: 15px 0 0 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .worry-parts {
     padding-left: 50px;
@@ -278,6 +279,7 @@ footer p {
 .worry-solution p {
     font-size: 50px;
     margin: auto;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .solution-parts {
     margin-left: 520px;
@@ -286,6 +288,86 @@ footer p {
 }
 .solution-parts p {
     position: absolute;
-    top: 16%;
+    top: 15%;
     left: 60%;
+}
+
+.use-container {
+    background-image: url("../images/back-C.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 5em 0;
+}
+.use-back {
+    width: 75%;
+    height: 3200px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 70px;
+}
+.title-1 {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.title-2 {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 45px;
+    margin-top: 175px;
+    margin-bottom: 60px;
+}
+.title-3 {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 45px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+.use-box {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+.use-img {
+    width: 50%;
+    height: 300px;
+    object-fit: contain;
+    padding: auto;
+}
+.use-text {
+    width: 50%;
+    padding: 50px;
+    font-size: 28px;
+    display: grid;
+    place-items: center;
+}
+.arrow {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 100px;
+    margin: auto;
+}
+.start-button {
+    width: 275px;
+    background-color: #8CE363;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+    color: #4b4b4b;
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    padding: 15px 0;
+}
+.start-button:hover {
+    box-shadow: none;
+    transform: translate3d(0, 6px, 0);
 }
