@@ -8,9 +8,6 @@ img {
 .wrapper{
     width: 100%;
 }
-p {
-    font-family: 'Kiwi Maru', serif;
-}
 
 /* ヘッダー */
 header {
@@ -52,6 +49,7 @@ footer p {
     position: absolute;
     top: 30px;
     left: 175px;
+    font-family: 'Kiwi Maru', serif;
 }
 .footer-logo {
     width: 150px;
@@ -197,6 +195,7 @@ footer p {
     margin-left: 70px;
     margin-right: 70px;
     font-size: 20px;
+    font-family: 'Kiwi Maru', serif;
 }
 
 .home-bottom {
@@ -307,6 +306,7 @@ footer p {
     padding: 50px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 70px;
+    font-family: 'Kiwi Maru', serif;
 }
 .title-1 {
     text-align: center;
@@ -371,3 +371,116 @@ footer p {
     box-shadow: none;
     transform: translate3d(0, 6px, 0);
 }
+
+/* お問い合わせ */
+.inquiry-new-user {
+    margin: 200px 0 100px 250px;
+    font-size: 32px;
+}
+.stepBar {
+    display: flex;
+    max-width: 400px;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+.stepBar li {
+    font-size: 12px;
+    list-style: none;
+    position: relative;
+    width: 33.333%;
+}
+.stepBar li:after {
+    background: #D0E1F9;
+    content: "";
+    width: calc(100% - 24px);
+    height: 4px;
+    position: absolute;
+    left: calc(-50% + 12px);
+    top: 10px;
+}
+.stepBar li:first-child:after {
+display: none;
+}
+.stepBar li span {
+    background: #D0E1F9;
+    color: #ffffff;
+    display: inline-block;
+    height: 24px;
+    margin-bottom: 5px;
+    line-height: 24px;
+    width: 24px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.stepBar .visited:after {
+    background: #4D648D;
+}
+.stepBar .visited span {
+    background: #4D648D;
+}
+
+
+
+
+.otehon {
+    margin: 100px 0 100px 0;
+}
+.lead-form{
+    text-align: center;
+    font-size:20px;
+  }
+  form{
+    width:460px;
+    margin:0 auto;
+  }
+  .item{
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .label{
+    float: left;
+    margin-right: 20px;
+    width:135px;
+    border-left: solid 3px #e0505d;
+    padding-left: 10px;
+  }
+  .inputs{
+    float: left;
+    width:300px;
+  }
+  input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
+  }
+  textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+  }
+  .btn-area{
+    text-align: center;
+  }
+  input[type="submit"]{
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }

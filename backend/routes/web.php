@@ -16,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+Route::get('/inquiry_input', function () {
+    return view('pages.inquiry.inquiry_input');
+});
+Route::get('/inquiry_confirmation', function () {
+    return view('pages.inquiry.inquiry_confirmation');
+});
 Route::get('/user/index', 'UserController@index');
