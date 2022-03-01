@@ -372,56 +372,85 @@ footer p {
     transform: translate3d(0, 6px, 0);
 }
 
-/* お問い合わせ */
+/* お問い合わせ & 新規会員登録 */
 .inquiry-new-user {
-    margin: 200px 0 100px 250px;
+    margin: 200px 0 95px 305px;
     font-size: 32px;
+}
+.surely {
+    margin-left: 20px;
+    font-weight:600;
+    color: red;
 }
 .stepBar {
     display: flex;
-    max-width: 400px;
+    width: 90%;
+    padding: 0 40px;
     position: relative;
-    margin: 20px auto;
+    margin: auto;
     text-align: center;
 }
 .stepBar li {
-    font-size: 12px;
+    font-size: 24px;
     list-style: none;
     position: relative;
-    width: 33.333%;
+    width: calc(100% / 3);
 }
 .stepBar li:after {
-    background: #D0E1F9;
+    background: #FFBDBD;
     content: "";
-    width: calc(100% - 24px);
-    height: 4px;
+    width: calc(100% - 48px);
+    height: 8px;
     position: absolute;
-    left: calc(-50% + 12px);
-    top: 10px;
+    left: calc(-50% + 24px);
+    top: 20px;
 }
 .stepBar li:first-child:after {
-display: none;
+    display: none;
 }
 .stepBar li span {
-    background: #D0E1F9;
+    background: #FFBDBD;
     color: #ffffff;
     display: inline-block;
-    height: 24px;
+    height: 48px;
     margin-bottom: 5px;
-    line-height: 24px;
-    width: 24px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    line-height: 48px;
+    width: 48px;
     border-radius: 50%;
 }
 .stepBar .visited:after {
-    background: #4D648D;
+    background: #FF6D6D;
 }
 .stepBar .visited span {
-    background: #4D648D;
+    background: #FF6D6D;
 }
 
-
+form {
+    font-size: 20px;
+}
+.inquery-1 {
+    height: 600px;
+    width: 60%;
+    margin: 0 auto;
+}
+.form-item-sex {
+    padding-bottom: 30px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}
+.label-sex {
+    float: left;
+}
+.label-sex::before {
+    /* font-family: "Font Awesome 5 Free";
+    content: '\f039';
+    color: rgb(206, 206, 206); */
+}
+.input-sex input {
+    margin-left: 80px;
+}
 
 
 .otehon {
@@ -439,13 +468,7 @@ display: none;
     overflow: hidden;
     margin-bottom: 20px;
   }
-  .label{
-    float: left;
-    margin-right: 20px;
-    width:135px;
-    border-left: solid 3px #e0505d;
-    padding-left: 10px;
-  }
+
   .inputs{
     float: left;
     width:300px;
