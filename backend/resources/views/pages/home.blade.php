@@ -111,7 +111,7 @@
         </div>
 
         <h1 class="title-3">さっそく始めてみよう！</h1>
-        <a class="start-button" href="#">スタート</a>
+        <a class="start-btn" href="#">スタート</a>
     </div>
 </section>
 @endsection

@@ -7,4 +7,6 @@
     <li class="visited"><span>1</span><br>入力</li>
     <li class="visited"><span>2</span><br>確認</li>
     <li class="visited"><span>3</span><br>完了</li>
+</ol>
+
 @endsection
