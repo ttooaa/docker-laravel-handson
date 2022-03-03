@@ -9,4 +9,8 @@
     <li class="visited"><span>3</span><br>完了</li>
 </ol>
 
+<section class="completion wrapper">
+    <p>送信が完了しました。ご協力ありがとうございました。</p>
+    <a href="{{ route('home') }}">TOPへ</a>
+</section>
 @endsection

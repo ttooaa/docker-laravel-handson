@@ -9,26 +9,27 @@
     <li><span>3</span><br>完了</li>
 </ol>
 
-<form class="inquery-2" action="">
-    <div class="form-item-sex">
+<form class="inquiry-2" method="POST" action="">
+    <div class="form-sex">
         <label class="label-sex dot-icon">性別</label>
         <p>：男性</p>
     </div>
 
-    <div class="form-item-email">
+    <div class="form-mail">
         <label class="dot-icon">返信用メールアドレス</label>
-        <div class="email-box">
-            <p>メールアドレス</p>
+        <div class="mail-pass-box">
+            <p>Eメールアドレス</p>
             <p>genuine.toa@gmail.com</p>
         </div>
     </div>
 
-    <div class="form-item-textarea">
+    <div class="form-textarea">
         <label class="dot-icon">お問い合わせ内容</label>
         <div class="textarea-box">
-            <textarea name="inquery" maxlength="600" readonly></textarea>
+            <textarea name="inquiry" maxlength="600" readonly></textarea>
         </div>
     </div>
-    <a class="inquery-btn" href="#">送信</a>
+
+    <button class="button-none form-btn" type="submit">送信</button>
 </form>
 @endsection

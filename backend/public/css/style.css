@@ -376,7 +376,8 @@ footer p {
 
 /* お問い合わせ & 新規会員登録 */
 .inquiry-new-user {
-    margin: 175px 0 75px 305px;
+    width: 63%;
+    margin: 175px auto 75px auto;
     font-size: 32px;
 }
 .surely {
@@ -431,21 +432,44 @@ footer p {
 .stepBar .visited span {
     background: #FF6D6D;
 }
+.stepBer-color li:after {
+    background: #B0C6FF;
+}
+.stepBer-color li span {
+    background: #B0C6FF;
+}
+.stepBer-color .visited-color:after {
+    background: #3C72FF;
+}
+.stepBer-color .visited-color span {
+    background: #3C72FF;
+}
 
 form {
     font-size: 20px;
 }
-.inquery-1 {
+.inquiry-1 {
     height: 1000px;
     width: 60%;
     margin: 0 auto;
 }
-.inquery-2 {
-    height: 950px;
+.inquiry-2 {
+    height: 1000px;
     width: 60%;
     margin: 0 auto;
 }
-.form-item-sex {
+.new-user-1 {
+    height: 775px;
+    width: 60%;
+    margin: 0 auto;
+}
+.new-user-2 {
+    height: 625px;
+    width: 60%;
+    margin: 0 auto;
+}
+.form-sex {
+    height:30px;
     padding-bottom: 40px;
     margin-top: 90px;
     margin-bottom: 40px;
@@ -454,7 +478,7 @@ form {
 .label-sex {
     float: left;
 }
-.form-item-sex p {
+.form-sex p {
     float: left;
     margin: 0 0 0 80px;
 }
@@ -477,37 +501,41 @@ form {
 .input-sex label {
     margin-left: 10px;
 }
-.form-item-email {
+.form-mail {
     padding-bottom: 40px;
     margin-bottom: 40px;
     overflow: hidden;
     border-bottom: 2px solid rgb(206, 206, 206);
 }
-.email-box {
+.form-pass {
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+.form-margin-top {
+    margin-top: 90px;
+}
+.mail-pass-box {
     width: 85%;
     margin: 40px auto 0 auto;
 }
-.email-box p {
+.mail-pass-box p {
     margin: 0 0 10px 0;
     font-size: 18px;
 }
-.confimation-email {
-    font-size: 26px;
-}
-.inquery-1 input[type="email"],
+.inquiry-1 input[type="email"],
 .new-user-1 input[type="email"],
-.new-user-1 type[type="password"] {
+.new-user-1 input[type="password"] {
     width: 70%;
     padding: 5px 10px;
     border: 2px solid black;
     font-size: 20px;
 }
-.form-item-textarea {
+.form-textarea {
     margin-bottom: 90px;
 }
 .textarea-box {
     width: 90%;
-    margin: 10px auto 60px auto;
+    margin: 10px auto 0 auto;
 }
 .textarea-box textarea {
     resize: none;
@@ -522,7 +550,7 @@ form {
     color: rgb(179, 179, 179);
     font-weight: 100;
 }
-.inquery-btn {
+.form-btn {
     width: 200px;
     background-color: #FF6D6D;
     border-radius: 2px;
@@ -536,7 +564,22 @@ form {
     margin: 10px auto;
     padding: 15px 0;
 }
-.inquery-btn:hover {
+.form-btn:hover {
     box-shadow: none;
     transform: translate3d(0, 6px, 0);
+}
+.form-btn-color {
+    background-color: #3C72FF
+}
+.button-none {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+}
+.completion {
+    height: 320px;
+    margin-top: 150px;
+    font-size: 26px;
+    text-align: center;
 }

@@ -15,11 +15,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
+})->name('home');
+Route::get('/inquiry/input', function () {
+    return view('pages.inquiry.input');
 });
-Route::get('/inquiry_input', function () {
-    return view('pages.inquiry.inquiry_input');
+Route::get('/inquiry/confirmation', function () {
+    return view('pages.inquiry.confirmation');
 });
-Route::get('/inquiry_confirmation', function () {
-    return view('pages.inquiry.inquiry_confirmation');
+Route::get('/inquiry/completion', function () {
+    return view('pages.inquiry.completion');
+});
+Route::get('/new_user/input', function () {
+    return view('pages.new_user.input');
+});
+Route::get('/new_user/confirmation', function () {
+    return view('pages.new_user.confirmation');
+});
+Route::get('/new_user/completion', function () {
+    return view('pages.new_user.completion');
 });
 Route::get('/user/index', 'UserController@index');
