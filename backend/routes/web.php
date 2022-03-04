@@ -35,3 +35,8 @@ Route::get('/new_user/completion', function () {
     return view('pages.new_user.completion');
 });
 Route::get('/user/index', 'UserController@index');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
