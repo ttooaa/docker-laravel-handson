@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/LS', function () {
     return view('pages.home');
-})->name('home');
+})->name('LS');
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });
@@ -36,7 +37,10 @@ Route::get('/new_user/completion', function () {
 });
 Route::get('/user/index', 'UserController@index');
 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', function () {
+    return view('welcome');
+});
