@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/LS', function () {
     return view('pages.home');
@@ -35,12 +44,9 @@ Route::get('/new_user/confirmation', function () {
 Route::get('/new_user/completion', function () {
     return view('pages.new_user.completion');
 });
-Route::get('/user/index', 'UserController@index');
 
-Auth::routes();
+// お試し
+Route::get('/log/{post}', [UserController::class, 'show']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//テスト
+Route::get('/user/index', [UserController::class, 'index']);

@@ -14,8 +14,9 @@ class CreateRoomsTable extends Migration
     public function up()
     {
         Schema::create('rooms', function (Blueprint $table) {
-            $table->bigIncrements('room_id')->unique();
-            $table->unsignedBigInteger('host_user_id')->unique();
+            $table->bigIncrements('id');
+            $table->foreignId('host_user_id')->constrained('users');
+            //member_user_idをどうするか
             $table->string('title');
             $table->string('detail')->nullable();
             $table->dateTime('start_time');

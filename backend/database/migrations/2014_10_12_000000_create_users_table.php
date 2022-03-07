@@ -15,15 +15,17 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('prefecture_id')->nullable();
+            $table->foreignId('prefecture_id')->constrained('prefectures');
+            //上記１行で外部成約キーをかけることができる
+            // $table->unsignedBigInteger('prefecture_id')->nullable();
             $table->string('email')->unique();
-            $table->string('name')->nullable();
+            $table->string('name');
             $table->string('password');
             $table->rememberToken();
             $table->string('sex')->nullable();
             $table->string('hobby')->nullable();
             $table->string('profile')->nullable();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
