@@ -8,17 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     protected $fillable = [
-        'user_id','prefecture_id','email','password','sex',
-        'name','hobby','profile','image','created_at','updated_at'
+        'prefecture_id','email','name','password',
+        'sex','hobby','profile','image'
     ];
-
-    public function rooms()
-    {
-        return $this->belongsToMany('App\Http\Models\Room');
-    }
 
     public function prefectures()
     {
         return $this->belongsTo('App\Http\Models\Prefecture');
+    }
+
+    public function rooms()
+    {
+        return $this->belongsToMany('App\Http\Models\Room');
     }
 }

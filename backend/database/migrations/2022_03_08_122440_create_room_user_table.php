@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTopicRoomsTable extends Migration
+class CreateRoomUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,16 @@ class CreateTopicRoomsTable extends Migration
      */
     public function up()
     {
-        Schema::create('topic_rooms', function (Blueprint $table) {
-            $table->bigInteger('topic_id')->unique();
-            $table->bigInteger('room_id')->unique();
+        Schema::create('room_user', function (Blueprint $table) {
+            $table->id();
+
+            $table->foreignId('room_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->foreignId('user_id')
+                ->constrained()
+                ->cascadeOnDelete();
+
             $table->timestamps();
         });
     }
@@ -27,6 +34,6 @@ class CreateTopicRoomsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('topic_rooms');
+        Schema::dropIfExists('room_user');
     }
 }

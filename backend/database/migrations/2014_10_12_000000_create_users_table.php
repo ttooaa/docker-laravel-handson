@@ -14,11 +14,15 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->foreignId('prefecture_id')->constrained('prefectures');
+            $table->id();
+            $table->foreignId('prefecture_id')
+                ->nullable()
+                ->constrained();
             //上記１行で外部成約キーをかけることができる
-            // $table->unsignedBigInteger('prefecture_id')->nullable();
+            //$table->unsignedBigInteger('prefecture_id')->nullable();
             $table->string('email')->unique();
+            //メール送信機能 未実装
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('name');
             $table->string('password');
             $table->rememberToken();

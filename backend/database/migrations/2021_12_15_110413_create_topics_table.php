@@ -14,8 +14,7 @@ class CreateTopicsTable extends Migration
     public function up()
     {
         Schema::create('topics', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->foreignId('room_id')->constrained('rooms');
+            $table->id();
             $table->string('topic_name');
             $table->timestamps();
         });

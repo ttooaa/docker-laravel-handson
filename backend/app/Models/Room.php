@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Room extends Model
 {
     protected $fillable = [
-        'room_id','host_user_id','title','detail','start_time','end_time',
-        'number_of_people','created_at','updated_at'
+        'host_id','member_id','title','detail',
+        'start_time','end_time','number_of_people'
     ];
 
     public function users()

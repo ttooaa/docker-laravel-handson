@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Topic extends Model
 {
     protected $fillable = [
-        'topic_id','topic_name'
+        'topic_name'
     ];
 
     public function rooms()

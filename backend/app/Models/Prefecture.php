@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Prefecture extends Model
 {
     protected $fillable = [
-        'prefecture_id','prefecture_name'
+       'prefecture_name'
     ];
 
     public function users()
