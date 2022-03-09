@@ -18,9 +18,9 @@ class UsersTableSeeder extends Seeder
         [
             'prefecture_id' => '1',
             'email' => 'exit@exit.com',
+            'name' => 'tanaka',
             'password' => '321tanaka',
             'sex' => '1',
-            'name' => 'tanaka',
             'hobby' => '釣り',
             'profile' => '細身低身長',
             'image' => 'http//:tanaka.co.jp'
