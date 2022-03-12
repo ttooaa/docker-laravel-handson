@@ -23,7 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/LS', function () {
+Route::get('/kyonowadai', function () {
     return view('pages.home');
 })->name('LS');
 Route::get('/inquiry/input', function () {
