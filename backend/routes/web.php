@@ -44,6 +44,12 @@ Route::get('/new_user/confirmation', function () {
 Route::get('/new_user/completion', function () {
     return view('pages.new_user.completion');
 });
+Route::get('/1', function () {
+    return view('auth.login1');
+});
+Route::get('/1test', function () {
+    return view('auth.logintest');
+});
 
 // お試し
 Route::get('/log/{post}', [UserController::class, 'show']);
