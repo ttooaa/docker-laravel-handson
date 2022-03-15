@@ -25,7 +25,8 @@ Route::get('/', function () {
 
 Route::get('/kyonowadai', function () {
     return view('pages.home');
-})->name('LS');
+})->name('kyonowadai');
+
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });

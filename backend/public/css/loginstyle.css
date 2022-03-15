@@ -87,8 +87,6 @@ a{color:inherit;text-decoration:none}
 	max-width:510px;
 	min-height:510px;
 	position:relative;
-	/* background:url(https://maxcdn.icons8.com/app/uploads/2016/03/material-1-1000x563.jpg) no-repeat center; */
-	/* background-size: cover; */
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.4);
 }
 .login-html{
@@ -229,9 +227,14 @@ a{color:inherit;text-decoration:none}
 	        transform:rotate(0);
 }
 
+.form-check{
+    font-size:14px;
+    align-items:center;
+}
+
 .hr{
 	height:2px;
-	margin:60px 0 50px 0;
+	margin:50px 0 50px 0;
 	background:rgba(0, 0, 0, 0.4);
 }
 .foot-lnk{

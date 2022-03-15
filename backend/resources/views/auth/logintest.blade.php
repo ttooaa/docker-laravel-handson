@@ -49,7 +49,7 @@
         <div class="opacity-1">
             <div class="login-wrap">
                 <div class="login-html">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST">
                         @csrf
 
                         <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label>
@@ -64,8 +64,19 @@
                                     <label for="pass" class="label">{{ __('Password') }}</label>
                                     <input id="pass" type="password" class="input" data-type="password">
                                 </div>
+
+                                <div class="col-md-7 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                        <label class="form-check-label" for="remember">
+                                            {{ __('Remember Me') }}
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <div class="group martop">
-                                    <input type="submit" class="button" value={{ __('Login') }}>
+                                    <input type="submit" class="button" value={{ __('Login') }} formaction="{{ route('login') }}">
                                 </div>
                                 <div class="hr"></div>
                             </div>
@@ -75,7 +86,7 @@
                                     <input id="user" type="text" class="input">
                                 </div>
                                 <div class="group">
-                                    <input type="submit" class="button" value={{ __('Send Password Reset Link') }}>
+                                    <input type="submit" class="button" value={{ __('Send Password Reset Link') }} formaction="{{ route('password.email') }}">
                                 </div>
                                 <div class="hr"></div>
                             </div>
