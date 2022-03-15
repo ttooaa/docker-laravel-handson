@@ -1,50 +1,14 @@
-{{-- サイトのベースとなる部分 --}}
-<!doctype html>
-<html lang="ja">
+{{-- ログインページ --}}
+@extends('layouts.base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" contents="皆さんが楽しめるワダイを提供します">
-    <title>キョウのワダイ</title>
+@section('head_link')
     <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}">
-    <link rel="icon" type="image/jpg" href="{{ asset('images/キョウのワダイ_タイトル画像.jpg') }}">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
+@endsection
 
-<body>
-    <header id="login1" class="wrapper">
-        <a href="#"><img class="header-logo" src="{{ asset('images/キョウのワダイ.jpeg') }}" alt="toppage"></a>
-
-        @auth
-            <div class="header-auth">
-                <ul>
-                    <li><a href="#">参加する</a></li>
-                    <li><a href="#">募集する</a></li>
-                    <li><a href="#">ステータス</a></li>
-                    <li><a href="#">マイページ</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </div>
-        @endauth
-
-        @guest
-            <div class="header-guest">
-                <ul>
-                    <li><a href="#">ログイン</a></li>
-                    <li><a href="#">新規登録</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </div>
-        @endguest
-    </header>
-
+@section('content')
     <main class="wrapper">
         <div class="opacity-1">
             <div class="login-wrap">
@@ -97,10 +61,5 @@
         </div>
     </main>
 
-    <footer class="wrapper">
-        @include('includes.footer')
-    </footer>
-</body>
-
-</html>
+@endsection
 

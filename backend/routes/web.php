@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/post_list', [App\Http\Controllers\HomeController::class, 'index'])->name('post_list');
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,6 +26,10 @@ Route::get('/', function () {
 Route::get('/kyonowadai', function () {
     return view('pages.home');
 })->name('kyonowadai');
+
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');

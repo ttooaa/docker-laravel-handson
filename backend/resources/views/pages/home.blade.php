@@ -1,6 +1,10 @@
 {{-- LPを表示させる --}}
 @extends('layouts.base')
 
+@section('head_link')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endsection
+
 @section('content')
 <section class="home-top wrapper"> {{-- TOP画面 --}}
     <h3>Know the inside.</h3>

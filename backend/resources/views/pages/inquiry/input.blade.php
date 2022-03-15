@@ -1,6 +1,10 @@
 {{-- お問い合わせ画面の入力項目 --}}
 @extends('layouts.base')
 
+@section('head_link')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endsection
+
 @section('content')
 <p class="inquiry-new-user">お問い合わせ</p>
 <ol class="stepBar">

@@ -1,6 +1,10 @@
 {{-- 新規会員登録画面の完了項目 --}}
 @extends('layouts.base')
 
+@section('head_link')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endsection
+
 @section('content')
 <p class="inquiry-new-user">新規会員登録</p>
 <ol class="stepBar stepBer-color">
