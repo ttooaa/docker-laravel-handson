@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             //メール送信機能 未実装
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->foreignId('prefecture_id')

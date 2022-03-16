@@ -31,6 +31,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/my_page', function () {
+    return view('application.my_page');
+});
+
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });

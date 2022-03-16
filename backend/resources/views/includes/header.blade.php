@@ -7,7 +7,7 @@
             <li><a href="#">参加する</a></li>
             <li><a href="#">募集する</a></li>
             <li><a href="#">ステータス</a></li>
-            <li><a href="#">マイページ</a></li>
+            <li><a href="{{ url('/my_page') }}">マイページ</a></li>
             <li><a href="{{ url('/inquiry/input') }}">お問い合わせ</a></li>
         </ul>
     </div>

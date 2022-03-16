@@ -5,6 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" contents="皆さんが楽しめるワダイを提供します">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>キョウのワダイ</title>
 
     @yield('head_link') {{-- スタイル等は各ページで表示が違うためそのページに合ったlinkを使用する --}}
