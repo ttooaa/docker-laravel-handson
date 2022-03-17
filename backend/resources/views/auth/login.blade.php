@@ -52,7 +52,7 @@
                             <div class="for-pwd-htm">
                                 @if (session('status'))
                                     <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}a
+                                        {{ session('status') }}
                                     </div>
                                 @endif
 
