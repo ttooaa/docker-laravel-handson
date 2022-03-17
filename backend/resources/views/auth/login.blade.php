@@ -16,8 +16,13 @@
                     <form method="POST">
                         @csrf
 
-                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label>
-                        <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">{{ __('Forgot Your Password?') }}</label>
+                        @if (session('status'))
+                            <input id="tab-1" type="radio" name="tab" class="sign-in"><label for="tab-1" class="tab">{{ __('Login') }}</label>
+                            <input id="tab-2" type="radio" name="tab" class="for-pwd" checked><label for="tab-2" class="tab">{{ __('Forgot Your Password?') }}</label>
+                        @else
+                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label>
+                            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">{{ __('Forgot Your Password?') }}</label>
+                        @endif
                         <div class="login-form">
                             <div class="sign-in-htm">
                                 <div class="group">
@@ -41,7 +46,6 @@
 
                                 <div class="group martop">
                                     <input type="submit" class="button" value={{ __('Login') }} formaction="{{ route('login') }}">
-                                    {{-- <input type="submit" class="button" value={{ __('Login') }}> --}}
                                 </div>
                                 <div class="hr"></div>
                             </div>
@@ -51,7 +55,7 @@
                                         {{ session('status') }}
                                     </div>
                                 @endif
-                                
+
                                 <div class="group">
                                     <label for="email" class="label">{{ __('Email Address') }}</label>
                                     <input id="email" type="text" name="email" class="input">
