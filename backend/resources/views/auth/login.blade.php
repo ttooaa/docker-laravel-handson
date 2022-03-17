@@ -47,12 +47,12 @@
                                 <div class="group martop">
                                     <input type="submit" class="button" value={{ __('Login') }} formaction="{{ route('login') }}">
                                 </div>
-                                <div class="hr"></di>
+                                <div class="hr"></div>
                             </div>
                             <div class="for-pwd-htm">
                                 @if (session('status'))
                                     <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
+                                        {{ session('status') }}a
                                     </div>
                                 @endif
 
