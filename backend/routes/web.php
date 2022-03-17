@@ -19,11 +19,11 @@ Auth::routes();
 
 Route::get('/post_list', [App\Http\Controllers\HomeController::class, 'index'])->name('post_list');
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/kyonowadai', function () {
+Route::get('/', function () {
     return view('pages.home');
 })->name('kyonowadai');
 
@@ -56,9 +56,9 @@ Route::get('/new_user/completion', function () {
 Route::get('/1', function () {
     return view('auth.login1');
 });
-Route::get('/1test', function () {
-    return view('auth.logintest');
-});
+// Route::get('/1test', function () {
+//     return view('auth.login');
+// });
 
 // お試し
 Route::get('/log/{post}', [UserController::class, 'show']);

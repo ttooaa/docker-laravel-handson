@@ -1,5 +1,5 @@
 {{-- ヘッダー --}}
-<a href="{{ url('/kyonowadai') }}"><img class="header-logo" src="{{ asset('images/キョウのワダイ.jpeg') }}" alt="toppage"></a>
+<a href="{{ url('/') }}"><img class="header-logo" src="{{ asset('images/キョウのワダイ.jpeg') }}" alt="toppage"></a>
 
 @auth
     <div class="header-auth">
