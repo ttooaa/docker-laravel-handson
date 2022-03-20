@@ -2,7 +2,8 @@
 @extends('layouts.base')
 
 @section('head_link')
-
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
