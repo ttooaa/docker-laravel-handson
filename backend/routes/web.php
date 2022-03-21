@@ -28,6 +28,7 @@ Route::get('/', function () {
 })->name('kyonowadai');
 
 
+
 Route::get('/home', function () {
     return view('home');
 });
