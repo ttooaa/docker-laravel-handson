@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="wrapper">
+    <header id="header1" class="wrapper">
         @include('includes.header')
     </header>
 
@@ -29,7 +29,7 @@
         @yield('content')
     </main>
 
-    <footer class="wrapper">
+    <footer id="footer1" class="wrapper">
         @include('includes.footer')
     </footer>
 </body>

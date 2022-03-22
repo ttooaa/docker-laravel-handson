@@ -241,14 +241,14 @@ a{color:inherit;text-decoration:none}
 	text-align:center;
 }
 
-/* .invalid-feedback {
+.invalid-feedback {
     display: none;
     width: 100%;
     margin-top: 0.25rem;
     font-size: 0.875em;
     color: #dc3545;
-} */
+}
 
-/* .is-invalid ~ .invalid-feedback {
+.is-invalid ~ .invalid-feedback {
     display: block;
-} */
+}

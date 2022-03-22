@@ -1,8 +1,5 @@
 /* 共通部分 */
-html {
-    font-size: 100%;
-}
-img {
+.image {
     max-width: 100%;
 }
 .wrapper{
@@ -10,7 +7,7 @@ img {
 }
 
 /* ヘッダー */
-header {
+#header1 {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -41,7 +38,7 @@ header a {
 }
 
 /* フッター */
-footer {
+#footer1 {
     position: relative;
     height: 75px;
     background-color: white;
