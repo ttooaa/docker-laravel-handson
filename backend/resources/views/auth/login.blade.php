@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-    <main class="wrapper">
+    <div id="body">
         <div class="opacity-1">
             <div class="login-wrap">
                 <div class="login-html">
@@ -96,5 +96,5 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 @endsection
