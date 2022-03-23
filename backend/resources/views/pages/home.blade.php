@@ -3,11 +3,6 @@
 
 @section('head_link')
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 @endsection
 
 @section('content')

@@ -338,7 +338,7 @@
 }
 .stepBar {
     display: flex;
-    width: 90%;
+    width: 87%;
     padding: 0 40px;
     position: relative;
     margin: auto;
@@ -416,7 +416,7 @@ form {
 }
 .form-sex {
     height:30px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
     margin-top: 90px;
     margin-bottom: 40px;
     border-bottom: 2px solid rgb(206, 206, 206);
@@ -434,6 +434,7 @@ form {
     background-size: contain;
     display: inline-block;
     margin-right: 1em;
+    margin-top: 1.5px;
     width: 0.95em;
     height: 0.95em;
     vertical-align: text-top;
