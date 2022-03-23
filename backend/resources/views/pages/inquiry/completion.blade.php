@@ -15,6 +15,6 @@
 
 <section class="completion wrapper">
     <p>送信が完了しました。ご協力ありがとうございました。</p>
-    <a href="{{ route('home') }}">TOPへ</a>
+    <a href="{{ url('/') }}}">TOPへ</a>
 </section>
 @endsection
