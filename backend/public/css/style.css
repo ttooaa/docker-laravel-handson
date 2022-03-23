@@ -6,11 +6,12 @@
     background-position: 0 -100px;
     background-color: #dcdcdc;
     text-align: center;
-    height: 940px;
+    height: 850px;
 }
 .home-top h3 {
     font-family: "Arial", sans-serif;
     font-size: 42px;
+    font-weight: bold;
     margin: auto;
     padding: 150px 0 5px 0;
     color: white;
@@ -23,6 +24,7 @@
 .home-top h1 {
     font-family: "ＭＳ 明朝",serif;
     font-size: 55px;
+    font-weight: bold;
     margin: auto;
 }
 #cloud-box {
@@ -41,18 +43,18 @@
 .cloud {
     z-index: 0;
     right: 0%;
-    top: 200px;
+    top: 100px;
     opacity: 0.9;
 }
 .fontA {
     z-index: 10;
     right: 6%;
-    top: 415px;
+    top: 315px;
 }
 .fontB {
     z-index: 20;
     right: 3.25%;
-    top: 460px;
+    top: 360px;
 }
 
 .home-center {
@@ -153,6 +155,8 @@
     font-family: 'クレー', sans-serif;
 }
 .worry-box {
+    width: 1000px;
+    margin: 0 auto;
     display: flex;
     position: relative;
 }
@@ -162,20 +166,19 @@
 }
 .gan1 {
     top: 11%;
-    left: 46%;
+    left: 48%;
 }
 .gan2 {
-    top: 39%;
-    left: 40%;
+    top: 40%;
+    left: 37%;
 }
 .gan3 {
-    top: 66%;
-    left: 46%;
+    top: 68%;
+    left: 48%;
 }
 .worry {
-    margin-top: 125px;
-    margin-left: 225px;
-    width: 500px;
+    margin-top: 160px;
+    width: 450px;
 }
 .worry-block {
     display: inline-block;
@@ -183,7 +186,7 @@
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 42px;
-    width: 445px;
+    width: 400px;
     height: 150px;
     text-align: left;
 }
@@ -195,7 +198,7 @@
 }
 .worry-block h3 {
     color: #FAFF00;
-    font-size: 32px;
+    font-size: 28px;
     margin: 15px 0 0 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -245,7 +248,7 @@
     padding: 5em 0;
 }
 .use-back {
-    width: 85%;
+    width: 82%;
     height: 3200px;
     margin: 0 auto;
     padding: 40px;
