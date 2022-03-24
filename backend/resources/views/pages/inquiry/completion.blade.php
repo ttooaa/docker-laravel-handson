@@ -6,10 +6,10 @@
 @endsection
 
 @section('content')
-<p class="inquiry-new-user">お問い合わせ</p>
+<p class="title">お問い合わせ</p>
 
 <section class="completion wrapper">
     <p>送信が完了しました。ご協力ありがとうございました。</p>
-    <a href="{{ url('/') }}}">TOPへ</a>
+    <a href="{{ url('/') }}">TOPへ</a>
 </section>
 @endsection

@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<p class="inquiry-new-user">お問い合わせ</p>
+<p class="title">お問い合わせ</p>
 
 <form class="inquiry-1 fonts" method="POST" action="">
     <div class="form-sex">

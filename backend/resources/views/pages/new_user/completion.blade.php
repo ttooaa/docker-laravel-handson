@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<p class="inquiry-new-user">新規会員登録</p>
+<p class="title new-user">新規会員登録</p>
 
 <section class="completion wrapper">
     <p>送信が完了しました。</p>

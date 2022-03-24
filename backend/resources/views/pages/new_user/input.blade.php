@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<p class="inquiry-new-user">新規会員登録</p>
+<p class="title new-user">新規会員登録</p>
 
 {{-- 後で変更↓ --}}
 <form class="new-user-1 fonts" method="POST" action="">
