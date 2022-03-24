@@ -425,7 +425,7 @@
 }
 .inquiry-1 input[type="email"],
 .new-user-1 input[type="email"],
-.new-user-1 input[type="name"],
+.new-user-1 input[type="text"],
 .new-user-1 input[type="password"] {
     width: 70%;
     padding: 5px 10px;
