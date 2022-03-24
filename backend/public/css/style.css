@@ -321,77 +321,27 @@
 }
 
 /* お問い合わせ & 新規会員登録 */
-.inquiry-new-user {
-    width: 63%;
+.inquiry {
+    width: 60%;
     margin: 175px auto 75px auto;
-    font-size: 32px;
+    font-size: 24px;
+}
+.new-user {
+    width: 60%;
+    margin: 175px auto 75px auto;
+    font-size: 24px;
 }
 .surely {
     margin-left: 20px;
     font-weight:600;
     color: red;
-}
+} /*必須*/
 .optional {
     margin-left: 20px;
     font-weight:600;
     color: rgb(179, 179, 179);
-}
-.stepBar {
-    display: flex;
-    width: 87%;
-    padding: 0 40px;
-    position: relative;
-    margin: auto;
-    text-align: center;
-}
-.stepBar li {
-    font-size: 24px;
-    list-style: none;
-    position: relative;
-    width: calc(100% / 3);
-}
-.stepBar li:after {
-    background: #FFBDBD;
-    content: "";
-    width: calc(100% - 48px);
-    height: 8px;
-    position: absolute;
-    left: calc(-50% + 24px);
-    top: 20px;
-}
-.stepBar li:first-child:after {
-    display: none;
-}
-.stepBar li span {
-    background: #FFBDBD;
-    color: #ffffff;
-    display: inline-block;
-    height: 48px;
-    margin-bottom: 5px;
-    line-height: 48px;
-    width: 48px;
-    border-radius: 50%;
-}
-.stepBar .visited:after {
-    background: #FF6D6D;
-}
-.stepBar .visited span {
-    background: #FF6D6D;
-}
-.stepBer-color li:after {
-    background: #B0C6FF;
-}
-.stepBer-color li span {
-    background: #B0C6FF;
-}
-.stepBer-color .visited-color:after {
-    background: #3C72FF;
-}
-.stepBer-color .visited-color span {
-    background: #3C72FF;
-}
-
-form {
+} /*任意*/
+.fonts {
     font-size: 20px;
 }
 .inquiry-1 {
@@ -405,12 +355,12 @@ form {
     margin: 0 auto;
 }
 .new-user-1 {
-    height: 775px;
+    height: 1000px;
     width: 60%;
     margin: 0 auto;
 }
 .new-user-2 {
-    height: 625px;
+    height: 790px;
     width: 60%;
     margin: 0 auto;
 }
@@ -471,6 +421,7 @@ form {
 }
 .inquiry-1 input[type="email"],
 .new-user-1 input[type="email"],
+.new-user-1 input[type="name"],
 .new-user-1 input[type="password"] {
     width: 70%;
     padding: 5px 10px;

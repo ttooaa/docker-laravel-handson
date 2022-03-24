@@ -38,19 +38,13 @@ Route::get('/my_page', function () {
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });
-Route::get('/inquiry/confirmation', function () {
-    return view('pages.inquiry.confirmation');
-});
 Route::get('/inquiry/completion', function () {
     return view('pages.inquiry.completion');
 });
-Route::get('/new_user/input', function () {
+Route::get('/user/input', function () {
     return view('pages.new_user.input');
 });
-Route::get('/new_user/confirmation', function () {
-    return view('pages.new_user.confirmation');
-});
-Route::get('/new_user/completion', function () {
+Route::get('/user/completion', function () {
     return view('pages.new_user.completion');
 });
 

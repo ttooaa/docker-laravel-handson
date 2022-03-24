@@ -7,14 +7,17 @@
 
 @section('content')
 <p class="inquiry-new-user">新規会員登録</p>
-<ol class="stepBar stepBer-color">
-    <li class="visited-color"><span>1</span><br>入力</li>
-    <li><span>2</span><br>確認</li>
-    <li><span>3</span><br>完了</li>
-</ol>
+
 {{-- 後で変更↓ --}}
-<form class="new-user-1" method="POST" action="">
+<form class="new-user-1 fonts" method="POST" action="">
     <div class="form-mail form-margin-top">
+        <label class="dot-icon">お名前<span class="surely">必須</span></label>
+        <div class="mail-pass-box">
+            <input type="name" name="name" required >
+        </div>
+    </div>
+
+    <div class="form-mail">
         <label class="dot-icon">メールアドレス<span class="surely">必須</span></label>
         <div class="mail-pass-box">
             <p>Eメールアドレス</p>
