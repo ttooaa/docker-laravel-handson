@@ -39,13 +39,13 @@ Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });
 Route::get('/inquiry/completion', function () {
-    return view('pages.inquiry.completion');
+    return view('pages.inquiry_compleate');
 });
 Route::get('/user/input', function () {
     return view('auth.newregi');
 });
-Route::get('/user/completion', function () {
-    return view('pages.new_user.completion');
+Route::get('/user/compleate', function () {
+    return view('pages.user_compleate');
 });
 
 Route::get('/1', function () {
