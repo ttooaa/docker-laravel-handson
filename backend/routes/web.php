@@ -42,7 +42,7 @@ Route::get('/inquiry/completion', function () {
     return view('pages.inquiry.completion');
 });
 Route::get('/user/input', function () {
-    return view('pages.new_user.input');
+    return view('auth.newregi');
 });
 Route::get('/user/completion', function () {
     return view('pages.new_user.completion');
