@@ -44,13 +44,10 @@ Route::get('/home', function () {
 // });
 
 Route::get('/inquiry/input', function () {
-    return view('pages.inquiry.input');
+    return view('pages.inquiry_input');
 });
 Route::get('/inquiry/compleate', function () {
     return view('pages.inquiry_compleate');
-});
-Route::get('/user/input', function () {
-    return view('auth.newregi');
 });
 Route::get('/user/compleate', function () {
     return view('pages.user_compleate');
