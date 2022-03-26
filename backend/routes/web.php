@@ -18,16 +18,13 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 Auth::routes(['verify' => true]);
 
-Route::get('/email/verify', function () {
-    return view('auth.verify-email');
-})->middleware('auth')->name('verification.notice');
-
-
-Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-    $request->fulfill();
-
-    return redirect('/home');
-})->middleware(['auth', 'signed'])->name('verification.verify');
+Route::middleware(['verified'])->group(function(){
+    Route::get('/my_page', function () {
+        return view('application.my_page');
+    });
+    //メール認証ができたユーザーのみ実行できるルート
+    //例えば今後機能を実装していく際にメール認証を終えていないユーザーが見えないようにする機能が欲しい場合にここに記述する
+});
 
 Route::get('/post_list', [App\Http\Controllers\HomeController::class, 'index'])->name('post_list');
 
@@ -43,9 +40,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/my_page', function () {
-    return view('application.my_page');
-});
+// Route::get('/my_page', function () {
+//     return view('application.my_page');
+// });
 
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
