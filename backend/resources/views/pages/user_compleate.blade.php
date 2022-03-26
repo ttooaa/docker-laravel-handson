@@ -9,7 +9,8 @@
 <p class="title new-user">新規会員登録</p>
 
 <section class="completion wrapper">
-    <p>送信が完了しました。</p>
+    <p>メールの送信と仮登録が完了しました。</p>
+    <p>メールに記載のURLを開いていただくと本機能をお使いいただけます。</p>
     <a href="{{ url('/') }}">TOPへ</a>
 </section>
 @endsection
