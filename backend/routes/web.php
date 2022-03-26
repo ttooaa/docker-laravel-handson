@@ -38,6 +38,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
+//仮でコメントにしている
 // Route::get('/my_page', function () {
 //     return view('application.my_page');
 // });
