@@ -4,6 +4,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,18 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Auth::routes();
+Auth::routes(['verify' => true]);
+
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
+
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/home');
+})->middleware(['auth', 'signed'])->name('verification.verify');
 
 Route::get('/post_list', [App\Http\Controllers\HomeController::class, 'index'])->name('post_list');
 
@@ -24,7 +36,7 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('/pages.home');
 })->name('kyonowadai');
 
 Route::get('/home', function () {
@@ -38,7 +50,7 @@ Route::get('/my_page', function () {
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry.input');
 });
-Route::get('/inquiry/completion', function () {
+Route::get('/inquiry/compleate', function () {
     return view('pages.inquiry_compleate');
 });
 Route::get('/user/input', function () {
