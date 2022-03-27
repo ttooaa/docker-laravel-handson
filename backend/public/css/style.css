@@ -485,3 +485,40 @@
     font-size: 26px;
     text-align: center;
 }
+
+/* verifyページ専用 */
+#body {
+	margin: 0;
+	color:#000000;
+	background:#c8c8c8;
+	background:url("../images/back-A.jpg") fixed;
+    background-size: cover;
+    background-position: 0 -250px;
+	background-size: cover;
+}
+.opacity-veri{
+    margin:0;
+    background: rgb(255, 255, 255, 0.2);
+    padding: 1px;
+    background-size: cover;
+}
+.login-wrap-veri{
+	width: 100%;
+    margin: 230px auto 170px auto;
+	max-width:660px;
+	min-height:300px;
+	position:relative;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.4);
+}
+.login-html-veri{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:45px 60px;
+	background:rgba(255, 255, 255, 0.9);
+}
+.title-veri {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}

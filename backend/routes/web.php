@@ -53,8 +53,8 @@ Route::get('/user/compleate', function () {
     return view('pages.user_compleate');
 });
 
-Route::get('/1', function () {
-    return view('auth.loginlara');
+Route::get('/verifyorigin', function () {
+    return view('auth.verifyorigin');
 });
 
 // お試し
