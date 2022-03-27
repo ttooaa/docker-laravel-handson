@@ -1,5 +1,6 @@
 {{-- ログインページ --}}
 @extends('layouts.base')
+@section('title','キョウのワダイ-ログイン')
 
 @section('head_link')
     <!-- Styles -->

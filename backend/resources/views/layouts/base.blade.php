@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>キョウのワダイ</title>
+    <title>@yield('title')</title>
 
     <link rel="icon" type="image/jpg" href="{{ asset('images/キョウのワダイ_タイトル画像.jpg') }}">
     <link rel="stylesheet" href="{{ asset('css/parts.css') }}">

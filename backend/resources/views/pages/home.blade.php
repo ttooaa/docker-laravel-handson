@@ -1,5 +1,6 @@
 {{-- LPを表示させる --}}
 @extends('layouts.base')
+@section('title','キョウのワダイ')
 
 @section('head_link')
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">

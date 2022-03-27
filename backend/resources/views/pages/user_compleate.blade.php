@@ -1,5 +1,6 @@
 {{-- 新規会員登録画面の完了項目 --}}
 @extends('layouts.base')
+@section('title','キョウのワダイ-新規会員登録')
 
 @section('head_link')
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
