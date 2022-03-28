@@ -8,6 +8,18 @@
 
 @section('content')
 <section id="back">
-    <h1 class="box-head">最近の投稿</h1>
+    <div class="container">
+        <div class="row my-4 align-items-center">
+            <div class="col-lg-4">
+                <h1>最近の投稿</h1>
+            </div>
+            <div class="col-lg-4">
+                <h1>最近の投稿</h1>
+            </div>
+            <div class="col-lg-4">
+                <h1>最近の投稿</h1>
+            </div>
+        </div>
+    </div>
 </section>
 @endsection

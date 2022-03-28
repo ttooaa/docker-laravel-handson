@@ -1,4 +1,11 @@
-/* マイページの仮のスタイル */
+/* 共通項目 */
+.kiwi {
+    font-family: 'Kiwi Maru', serif;
+}
+.noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .container {
     height: 200px;
 }
@@ -14,7 +21,4 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 90rem;
-}
-.box-head {
-    /* margin: 0px auto 0 auto; */
 }
