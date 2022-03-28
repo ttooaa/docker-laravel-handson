@@ -7,10 +7,14 @@
 }
 #back {
 	margin: 0;
+    padding-top: 100px;
 	color:#000000;
 	background:#c8c8c8;
 	background:url("../images/back-B.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 90rem;
+}
+.box-head {
+    /* margin: 0px auto 0 auto; */
 }

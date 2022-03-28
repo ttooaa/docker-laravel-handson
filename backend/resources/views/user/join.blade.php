@@ -1,13 +1,13 @@
 {{-- 参加画面の表示 --}}
 @extends('layouts.base')
-@section('title','キョウのワダイ-マイページ')
+@section('title','キョウのワダイ-参加一覧')
 
 @section('head_link')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 @endsection
 
 @section('content')
-<div id="back">
-
-</div>
+<section id="back">
+    <h1 class="box-head">最近の投稿</h1>
+</section>
 @endsection
