@@ -38,11 +38,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
-//仮でコメントにしている
-// Route::get('/my_page', function () {
-//     return view('application.my_page');
-// });
-
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry_input');
 });
@@ -52,9 +47,12 @@ Route::get('/inquiry/compleate', function () {
 Route::get('/user/compleate', function () {
     return view('pages.user_compleate');
 });
-
 Route::get('/verifyorigin', function () {
     return view('auth.verifyorigin');
+});
+
+Route::get('/join', function () {
+    return view('user.join');
 });
 
 // お試し

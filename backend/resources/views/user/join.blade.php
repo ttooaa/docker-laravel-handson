@@ -7,5 +7,7 @@
 @endsection
 
 @section('content')
-<p class="inquiry-new-user">ログイン成功！</p>
+<div id="back">
+
+</div>
 @endsection

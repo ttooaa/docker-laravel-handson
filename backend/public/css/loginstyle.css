@@ -6,7 +6,6 @@
 	background:url("../images/back-A.jpg") fixed;
     background-size: cover;
     background-position: 0 -250px;
-	background-size: cover;
 }
 :after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
