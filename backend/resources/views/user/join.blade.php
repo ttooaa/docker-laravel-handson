@@ -48,11 +48,28 @@
             <div class="row">
                 <div class="col-6"> {{-- 写真表示 --}}
                     <div class="d-flex flex-row">
-                        <h2 class="m-2">誰でも可</h2>
+                        <h2 class="m-2">画像</h2>
+                        <h2 class="m-2">画像</h2>
+                        <h2 class="m-2">画像</h2>
+                        <h2 class="m-2">画像</h2>
                     </div>
                 </div>
                 <div class="col-6"> {{-- 詳細分 --}}
-                    a
+                    <p class="m-0">はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！</p>
+                </div>
+            </div>
+            <div class="row align-item-center my-2">
+                <div class="col-3"> {{-- 詳細分 --}}
+                    <h5 class="m-0">はじめまして！</h5>
+                </div>
+                <div class="col-3"> {{-- 詳細分 --}}
+                    <h5 class="m-0">はじめまして！</h5>
+                </div>
+                <div class="col-3"> {{-- 詳細分 --}}
+                    <h5 class="m-0">はじめまして！</h5>
+                </div>
+                <div class="col-3"> {{-- 詳細分 --}}
+                    <h5 class="m-0">はじめまして！</h5>
                 </div>
             </div>
         </div>
