@@ -10,7 +10,7 @@
 <section id="back">
     <div class="container">
         {{-- 項目部分 --}}
-        <div class="row my-3 pb-4 align-items-center noto border-bottom border-dark border-3">
+        <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
             <div class="col-3">
                 <h1 class="text-center condition">最近の投稿</h1>
             </div>
@@ -39,8 +39,22 @@
         {{-- @foreach ($rooms as $room)
         <div></div>
         @endforeach --}}
-        <div class="col">
-
+        <div class="col-12 mt-4 p-3 noto">
+            <div class="d-flex flex-row">
+                <h2 class="m-2">誰でも可</h2> {{-- 分類 --}}
+                <h2 class="m-2">｜</h2> {{-- 空間 --}}
+                <h2 class="m-2">気軽にお話しましょう！</h2> {{-- title部分 --}}
+            </div>
+            <div class="row">
+                <div class="col-6"> {{-- 写真表示 --}}
+                    <div class="d-flex flex-row">
+                        <h2 class="m-2">誰でも可</h2>
+                    </div>
+                </div>
+                <div class="col-6"> {{-- 詳細分 --}}
+                    a
+                </div>
+            </div>
         </div>
     </div>
 </section>
