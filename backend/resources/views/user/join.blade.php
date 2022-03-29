@@ -36,9 +36,6 @@
             </div>
         </div>
 
-        {{-- @foreach ($rooms as $room)
-        <div></div>
-        @endforeach --}}
         <div class="col-12 mt-4 p-3 noto">
             <div class="d-flex flex-row">
                 <h2 class="m-2">誰でも可</h2> {{-- 分類 --}}
