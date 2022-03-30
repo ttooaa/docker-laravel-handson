@@ -11,16 +11,16 @@
     <div class="container">
         {{-- 項目部分 --}}
         <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <h1 class="text-center condition">最近の投稿</h1>
             </div>
-            <div class="offset-3 col-3">
+            <div class="offset-3 col-lg-3">
                 <div class="input-group px-2">
                     <input type="text" class="form-control" placeholder="キーワード入力" aria-label="キーワード入力" aria-describedby="button-addon2">
                     <button type="button" id="button-addon2" class="btn btn-primary">検索</button>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="input-group px-2">
                     <select class="form-select" id="inputGroupSelect02">
                       <option selected>最近の投稿</option>
@@ -36,36 +36,36 @@
             </div>
         </div>
 
-        <div class="col-12 mt-4 p-3 noto">
+        <div class="col-lg-12 mt-4 p-3 noto">
             <div class="d-flex flex-row">
                 <h2 class="m-0">誰でも可</h2> {{-- 分類 --}}
                 <h2 class="m-0">｜</h2> {{-- 空間 --}}
                 <h2 class="m-0">気軽にお話しましょう！</h2> {{-- title部分 --}}
             </div>
             <div class="row">
-                <div class="col-6"> {{-- 写真表示 --}}
+                <div class="col-lg-6"> {{-- 写真表示 --}}
                     <div class="row">
-                        <h2 class="col-3 m-0">画像</h2>
-                        <h2 class="col-3 m-0">画像</h2>
-                        <h2 class="col-3 m-0">画像</h2>
-                        <h2 class="col-3 m-0">画像</h2>
+                        <h2 class="col-lg-3 m-0">画像</h2>
+                        <h2 class="col-lg-3 m-0">画像</h2>
+                        <h2 class="col-lg-3 m-0">画像</h2>
+                        <h2 class="col-lg-3 m-0">画像</h2>
                     </div>
                 </div>
-                <div class="col-6"> {{-- 詳細分 --}}
+                <div class="col-lg-6"> {{-- 詳細分 --}}
                     <p class="m-0">はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！はじめまして！</p>
                 </div>
             </div>
             <div class="row align-item-center mt-3">
-                <div class="col-3"> {{-- 詳細分 --}}
+                <div class="col-lg-3"> {{-- 詳細分 --}}
                     <h5 class="m-0">はじめまして！</h5>
                 </div>
-                <div class="col-3"> {{-- 詳細分 --}}
+                <div class="col-lg-3"> {{-- 詳細分 --}}
                     <h5 class="m-0">はじめまして！</h5>
                 </div>
-                <div class="col-3"> {{-- 詳細分 --}}
+                <div class="col-lg-3"> {{-- 詳細分 --}}
                     <h5 class="m-0">はじめまして！</h5>
                 </div>
-                <div class="col-3 text-end"> {{-- 詳細分 --}}
+                <div class="col-lg-3 text-end"> {{-- 詳細分 --}}
                     <h5 class="m-0">はじめまして！</h5>
                 </div>
             </div>
