@@ -42,7 +42,7 @@
                 <h2 class="m-0">｜</h2> {{-- 空間 --}}
                 <h2 class="m-0">気軽にお話しましょう！</h2> {{-- title部分 --}}
             </div>
-            <div class="row" style="height: 96px;">
+            <div class="row mt-3" style="height: 96px;">
                 <div class="col-lg-6 align-self-center"> {{-- 写真表示 --}}
                     <div class="row">
                         <img class="col-lg-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
