@@ -42,24 +42,4 @@
     border-radius: 30px;
     width: 85%;
 }
-userImg1 {
-    position: absolute;
-    z-index: 25;
-    top: 0;
-    left: 0%;
-}
-userImg2 {
-    position: absolute;
-    top: 0;
-    left: 25%;
-}
-userImg3 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-userImg4 {
-    position: absolute;
-    top: 0;
-    left: 60%;
-}
+
