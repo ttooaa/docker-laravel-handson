@@ -6,7 +6,7 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.container {
+.container-kari {
     height: 200px;
 }
 .box {
@@ -23,7 +23,7 @@
     height: 90rem;
 }
 .condition {
-    background-color: rgb(245, 245, 220,0.8);
+    background-color: rgba(252 , 238, 190, 0.8);
     border-radius: 1rem;
     margin: 0 20px;
     padding: 1rem 0;
@@ -31,4 +31,9 @@
 .avatar {
     height: 50px;
     border-radius: 50%;
+}
+.postBack {
+    background:rgba(242, 242, 227, 0.9);
+    border-radius: 30px;
+    width: 85%;
 }

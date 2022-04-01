@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="col-lg-12 mt-4 p-3 noto">
+        <div class="col-lg-12 mt-4 mx-auto p-4 noto postBack">
             <div class="d-flex flex-row">
                 <h2 class="m-0">誰でも可</h2> {{-- 分類 --}}
                 <h2 class="m-0">｜</h2> {{-- 空間 --}}

@@ -18,13 +18,13 @@ Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
     Route::get('/my_page', function () {
-        return view('application.my_page');
+        return view('user.my_page');
     });
     //メール認証ができたユーザーのみ実行できるルート
     //例えば今後機能を実装していく際にメール認証を終えていないユーザーが見えないようにする機能が欲しい場合にここに記述する
 });
 
-Route::get('/post_list', [App\Http\Controllers\HomeController::class, 'index'])->name('post_list');
+Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -49,10 +49,6 @@ Route::get('/user/compleate', function () {
 });
 Route::get('/verifyorigin', function () {
     return view('auth.verifyorigin');
-});
-
-Route::get('/join', function () {
-    return view('user.join');
 });
 
 // お試し

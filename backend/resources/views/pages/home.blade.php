@@ -116,7 +116,7 @@
         </div>
 
         <h1 class="title-3">さっそく始めてみよう！</h1>
-        <a class="start-btn" href="{{ route('post_list') }}">スタート</a>
+        <a class="start-btn" href="{{ route('join') }}">スタート</a>
     </div>
 </section>
 @endsection
