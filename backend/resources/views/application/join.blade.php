@@ -8,7 +8,7 @@
 
 @section('content')
 <section id="back">
-    <div class="container">
+    <div class="container pb-4 border-bottom border-dark border-3">
         {{-- 項目部分 --}}
         <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
             <div class="col-lg-3">
@@ -42,14 +42,21 @@
                 <h2 class="m-0">｜</h2> {{-- 空間 --}}
                 <h2 class="m-0">気軽にお話しましょう！</h2> {{-- title部分 --}}
             </div>
-            <div class="row mt-3" style="height: 96px;">
+            {{-- <div class="row mt-3" style="height: 96px;"> --}}
+            <div class="row mt-3">
                 <div class="col-lg-6 align-self-center"> {{-- 写真表示 --}}
                     <div class="row">
-                        <img class="col-lg-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
-                        <h2 class="col-lg-3 m-0">画像</h2>
-                        <h2 class="col-lg-3 m-0">画像</h2>
-                        <h2 class="col-lg-3 m-0">画像</h2>
+                        <img class="col-lg-3 p-0 mr-1 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                        <img class="col-lg-3 p-0 mr-1 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                        <img class="col-lg-3 p-0 mr-1 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                        <img class="col-lg-3 p-0 mr-1 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                     </div>
+<div class="position-relative" style="width: 384px; height: 96px;">
+    <img class="p-0 avatar userImg1" src="{{ asset('images/丸-中.png') }}" alt="host">
+    <img class="p-0 avatar userImg2" src="{{ asset('images/丸-中.png') }}" alt="host">
+    <img class="p-0 avatar userImg3" src="{{ asset('images/丸-中.png') }}" alt="host">
+    <img class="p-0 avatar userImg4" src="{{ asset('images/丸-中.png') }}" alt="host">
+</div>
                 </div>
                 <div class="col-lg-6 align-self-center"> {{-- 詳細分 150文字以内 --}}
                     <p class="m-0">１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６</p>

@@ -7,16 +7,19 @@
 @endsection
 
 @section('content')
-<div class="container-kari">
-    <div class="box">
-        <a class="dropdown-item" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-            ログアウト
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
+<section id="back">
+    <div class="container-kari">
+        <div class="box">
+            <a class="" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                ログアウト
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </div>
     </div>
-</div>
+</section>
+
 @endsection

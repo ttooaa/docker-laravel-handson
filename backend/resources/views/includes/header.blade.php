@@ -3,7 +3,7 @@
 
 @auth
     <ul class="header-ul">
-        <li><a  class="nav-link text-dark" href="#">参加する</a></li>
+        <li><a  class="nav-link text-dark" href="{{ url('/join') }}">参加する</a></li>
         <li><a  class="nav-link text-dark" href="#">募集する</a></li>
         <li><a  class="nav-link text-dark" href="#">ステータス</a></li>
         <li class="nav-item dropdown">
