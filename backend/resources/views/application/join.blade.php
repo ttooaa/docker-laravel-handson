@@ -58,16 +58,16 @@
             </div>
             <div class="row align-item-center mt-3">
                 <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして！</h5>
+                    <h5 class="m-0">はじめまして</h5>
                 </div>
                 <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして！</h5>
+                    <h5 class="m-0">はじめまして</h5>
                 </div>
                 <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして！</h5>
+                    <h5 class="m-0">はじめまして</h5>
                 </div>
                 <div class="col-3 text-end"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして！</h5>
+                    <h5 class="m-0">はじめまして</h5>
                 </div>
             </div>
         </div>
