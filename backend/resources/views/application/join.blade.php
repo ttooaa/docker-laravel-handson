@@ -11,17 +11,17 @@
     <div class="container pb-4 border-bottom border-dark border-3">
         {{-- 項目部分 --}}
         <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-lg-4">
                 <h1 class="text-center condition">最近の投稿</h1>
             </div>
-            <div class="offset-3 col-lg-3">
-                <div class="input-group px-2">
+            <div class="offset-xl-3 col-xl-3 col-lg-4">
+                <div class="input-group px-2 my-2">
                     <input type="text" class="form-control" placeholder="キーワード入力" aria-label="キーワード入力" aria-describedby="button-addon2">
                     <button type="button" id="button-addon2" class="btn btn-primary">検索</button>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="input-group px-2">
+            <div class="col-xl-3 col-lg-4">
+                <div class="input-group px-2 my-md-2">
                     <select class="form-select" id="inputGroupSelect02">
                       <option selected>最近の投稿</option>
                       <option value="1">フォロワー</option>
@@ -44,7 +44,7 @@
             </div>
             {{-- <div class="row mt-3" style="height: 96px;"> --}}
             <div class="row mt-3">
-                <div class="col-xl-6 col-lg-8 align-self-center"> {{-- 写真表示 --}}
+                <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                     <div class="row">
                         <img class="col-lg-3 p-0 ms-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                         <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
@@ -52,7 +52,7 @@
                         <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-4 align-self-center"> {{-- 詳細分 150文字以内 --}}
+                <div class="col-xl-6 col-md-4 align-self-center"> {{-- 詳細分 150文字以内 --}}
                     <p class="my-3">１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６</p>
                 </div>
             </div>
