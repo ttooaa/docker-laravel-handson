@@ -14,14 +14,14 @@
             <div class="col-xl-3 col-lg-4">
                 <h1 class="text-center condition">最近の投稿</h1>
             </div>
-            <div class="offset-xl-3 col-xl-3 col-lg-4">
-                <div class="input-group px-2 my-2">
+            <div class="offset-xl-3 col-xl-3 col-lg-4 col-md-6">
+                <div class="input-group px-2">
                     <input type="text" class="form-control" placeholder="キーワード入力" aria-label="キーワード入力" aria-describedby="button-addon2">
                     <button type="button" id="button-addon2" class="btn btn-primary">検索</button>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-                <div class="input-group px-2 my-md-2">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="input-group px-2">
                     <select class="form-select" id="inputGroupSelect02">
                       <option selected>最近の投稿</option>
                       <option value="1">フォロワー</option>
