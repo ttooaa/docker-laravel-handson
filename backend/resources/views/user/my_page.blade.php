@@ -8,18 +8,7 @@
 
 @section('content')
 <section id="back">
-    <div class="container-kari">
-        <div class="box">
-            <a class="" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                ログアウト
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
-        </div>
-    </div>
+
 </section>
 
 @endsection
