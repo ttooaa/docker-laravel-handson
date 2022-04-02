@@ -44,7 +44,7 @@
             </div>
             {{-- <div class="row mt-3" style="height: 96px;"> --}}
             <div class="row mt-3">
-                <div class="col-lg align-self-center"> {{-- 写真表示 --}}
+                <div class="col-xl-6 col-lg-8 align-self-center"> {{-- 写真表示 --}}
                     <div class="row">
                         <img class="col-lg-3 p-0 ms-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                         <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
@@ -52,8 +52,8 @@
                         <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                     </div>
                 </div>
-                <div class="col-lg align-self-center"> {{-- 詳細分 150文字以内 --}}
-                    <p class="m-0">１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６</p>
+                <div class="col-xl-6 col-lg-4 align-self-center"> {{-- 詳細分 150文字以内 --}}
+                    <p class="my-3">１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６</p>
                 </div>
             </div>
             <div class="row align-item-center mt-3">
