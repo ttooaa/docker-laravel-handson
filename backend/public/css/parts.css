@@ -51,3 +51,34 @@
     width: 150px;
     margin-left: 162px;
 }
+
+@media screen and (max-width:1200px) {
+    #header1 {
+        padding:0 20px;
+    }
+
+    .footer-p {
+        left: 43px;
+    }
+    .footer-logo {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:930px) {
+    ul {
+        padding-left: 0 !important;
+    }
+    #header1 {
+        padding:0;
+    }
+    .nav-link {
+        padding: 0.5rem 5px !important;
+    }
+
+    .footer-p {
+        left: 25px;
+    }
+    .footer-logo {
+        margin-left: 12px;
+    }
+}
