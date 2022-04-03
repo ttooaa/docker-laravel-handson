@@ -34,6 +34,6 @@
         </div>
     </div>
 
-    <button class="button-none form-btn" type="submit">確認へ</button>
+    <button class="button-none form-btn" type="submit">完了</button>
 </form>
 @endsection

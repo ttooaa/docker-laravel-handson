@@ -32,7 +32,7 @@
                       <option value="6">自由枠</option>
                     </select>
                     <label for="inputGroupSelect02" class="input-group-text">絞り込み</label>
-                  </div>
+                </div>
             </div>
         </div>
 
