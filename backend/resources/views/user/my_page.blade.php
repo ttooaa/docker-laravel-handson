@@ -9,11 +9,14 @@
 
 @section('content')
 <section id="back">
-    <div class="profileScr">
-        <div  class="profileSize">
-            <h1 class="profileTitle">まずは簡単な自己紹介を作成しよう</h1>
+    <div class="formScr">
+        <div  class="formSize">
+            <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
 
             <form method="POST" action="">
+
+                {{-- ここに画像登録用のフォームを挿入する --}}
+
                 <div class="form-sex">
                     <label class="label-sex ">性別<span class="surely">必須</span></label>
                     <div class="input-sex">
