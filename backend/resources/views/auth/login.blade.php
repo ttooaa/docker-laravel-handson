@@ -4,7 +4,6 @@
 
 @section('head_link')
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -13,7 +12,7 @@
 
 @section('content')
     <div id="body">
-        <div class="opacity-1">
+        <div class="opacity-2">
             <div class="login-wrap">
                 <div class="login-html">
                     @if (session('status'))

@@ -3,12 +3,10 @@
 @section('title','キョウのワダイ-メール再送信')
 
 @section('head_link')
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
 
 @section('content')
-    <div id="body">
+    <div id="body-veri">
         <div class="opacity-veri">
             <div class="login-wrap-veri">
                 <div class="login-html-veri">

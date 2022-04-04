@@ -3,7 +3,6 @@
 @section('title','キョウのワダイ-新規会員登録')
 
 @section('head_link')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
 
 @section('content')

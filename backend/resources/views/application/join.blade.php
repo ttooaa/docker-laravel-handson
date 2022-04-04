@@ -3,7 +3,6 @@
 @section('title','キョウのワダイ-参加一覧')
 
 @section('head_link')
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 @endsection
 
 @section('content')
