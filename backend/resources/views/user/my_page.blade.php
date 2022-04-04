@@ -18,10 +18,10 @@
                 <div class="form-sex formPb">
                     <div class="formImg">
                         {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
-                        <label for="file" class="filelabel">ファイルを添付</label>
-                        <input type="file" name="fileinput" id="file" class="fileinput" onchange="previewFile(this);">
+                        <label for="file" class="fileLabel">ファイルを添付</label>
+                        <input type="file" name="file" id="file" class="fileInput" onchange="previewFile(this);">
 
-                        <img class="avatar" id="preview">
+                        <img class="fileAvatar" id="preview">
                     </div>
                 </div>
 
