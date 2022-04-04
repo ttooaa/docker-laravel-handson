@@ -15,14 +15,13 @@
             <form method="POST" action="" enctype="multipart/form-data">
 
                 {{-- ここに画像登録用のフォームを挿入する --}}
-                <div class="form-sex formPb">
-                    <div class="formImg">
-                        {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
-                        <label for="file" class="fileLabel">ファイルを添付</label>
-                        <input type="file" name="file" id="file" class="fileInput" onchange="previewFile(this);">
+                <div class="formImg center-block">
+                    {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
+                    <img class="fileAvatar" id="preview">
 
-                        <img class="fileAvatar" id="preview">
-                    </div>
+                    <label for="file" class="fileLabel">ファイルを添付</label>
+                    <input type="file" name="file" id="file" class="fileInput" accept="image/png, image/jpeg" onchange="previewFile(this);">
+                    <p class="fileCaution">あああああああああああああああああああああああああああああああああああああああああああ</p>
                 </div>
 
                 <div class="form-sex formPb formMt">
