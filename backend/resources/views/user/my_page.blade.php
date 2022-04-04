@@ -12,11 +12,20 @@
         <div  class="formSize">
             <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
 
-            <form method="POST" action="">
+            <form method="POST" action="" enctype="multipart/form-data">
 
                 {{-- ここに画像登録用のフォームを挿入する --}}
-
                 <div class="form-sex formPb">
+                    <div class="formImg">
+                        {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
+                        <label for="file" class="filelabel">ファイルを添付</label>
+                        <input type="file" name="fileinput" id="file" class="fileinput" onchange="previewFile(this);">
+
+                        <img class="avatar" id="preview">
+                    </div>
+                </div>
+
+                <div class="form-sex formPb formMt">
                     <label class="label-sex">性別<span class="surely">必須</span></label>
                     <div class="input-sex formMl">
                         <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
@@ -34,6 +43,13 @@
                     </div>
                 </div>
 
+                <div class="form-mail mt-3">
+                    <label class="label-sex">趣味</label>
+                    <div class="input-sex">
+                        <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
+                    </div>
+                </div>
+
                 <div class="form-textarea">
                     <label class="mb-3">自己紹介文</label>
                     <div class="textarea-box">
@@ -47,4 +63,15 @@
         </div>
 </section>
 
+<script>
+    function previewFile(Img){
+      var fileData = new FileReader();
+      fileData.onload = (function() {
+        //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
+        //プレビュー表示している
+        document.getElementById('preview').src = fileData.result;
+      });
+      fileData.readAsDataURL(Img.files[0]);
+    }
+</script>
 @endsection
