@@ -7,7 +7,7 @@
 
 @section('content')
 {{-- <section id="back" style="height:1150px;""> --}}
-<section id="back">
+<section id="back"style="height: 1600px;">
     <div class="formScr">
         <div  class="formSize">
             <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
@@ -15,13 +15,12 @@
             <form method="POST" action="" enctype="multipart/form-data">
 
                 {{-- ここに画像登録用のフォームを挿入する --}}
-                <div class="formImg center-block">
+                <div class="formImg">
                     {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
                     <img class="fileAvatar" id="preview">
-
-                    <label for="file" class="fileLabel">ファイルを添付</label>
-                    <input type="file" name="file" id="file" class="fileInput" accept="image/png, image/jpeg" onchange="previewFile(this);">
-                    <p class="fileCaution">あああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <label for="file" class="fileLabel">ファイルを添付</label>
+                        <input type="file" name="file" id="file" class="fileInput" accept="image/png, image/jpeg" onchange="previewFile(this);">
+                        <p class="fileCaution">あああああああああああああああああああああああああああああああああああああああああああ</p>
                 </div>
 
                 <div class="form-sex formPb formMt">
