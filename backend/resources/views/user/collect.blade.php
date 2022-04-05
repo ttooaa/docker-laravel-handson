@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="form-textarea">
-                    <label class="mb-3">自己紹介文</label>
+                    <label class="mb-3">詳細</label>
                     <div class="textarea-box">
                         <textarea name="inquiry" maxlength="150" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せて友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
                     </div>
