@@ -15,12 +15,17 @@
             <form method="POST" action="" enctype="multipart/form-data">
 
                 {{-- ここに画像登録用のフォームを挿入する --}}
-                <div class="formImg">
+                <div class="formImg row">
                     {{-- <input type="file" class="form-controll-file" id="avatar" name="avatar" accept="image/png, image/jpeg"> --}}
-                    <img class="fileAvatar" id="preview">
+                    <div class="col-6 d-flex justify-content-center">
+                        <img class="fileAvatar" id="preview">
+                    </div>
+                    <div class="col-6">
                         <label for="file" class="fileLabel">ファイルを添付</label>
                         <input type="file" name="file" id="file" class="fileInput" accept="image/png, image/jpeg" onchange="previewFile(this);">
-                        <p class="fileCaution">あああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <p class="fileCaution mb-0">※画像は横長だとしても中央を基準に正方形に切り取られます。</p>
+                        <p class="fileCaution m-0">※画像サイズは1MB以下のご利用をお願いします。</p>
+                    </div>
                 </div>
 
                 <div class="form-sex formPb formMt">
