@@ -14,7 +14,7 @@
             <form method="POST" action="" enctype="multipart/form-data">
 
                 <div class="form-head formPb">
-                    <label class="label-head labelWidth">タイトル<span class="surely">必須</span></label>
+                    <label class="label-head labelWidth my-1">タイトル<span class="surely">必須</span></label>
                     <input class="formTextTitle" type="text" name="title" placeholder="最大20文字まで">
                 </div>
 
@@ -28,9 +28,15 @@
                 </div>
 
                 <div class="form-mail mt-3">
-                    <label class="label-head">趣味</label>
-                    <div class="input-head">
-                        <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
+                    <label>時間指定<span class="surely">必須</span></label>
+                    <p class="timeCaution">※開始時間で選択した時間が経過後、開催時間が開始されます。</p>
+                    <div class="mail-pass-box">
+                        <label for="startTime" class="label-head my-1" style="font-size: 20px;">開始時間</label>
+                        <div class="input-head">
+                            <select class="formTextTitle selectWidth" style="width: 300px;" name="genre" id="">
+                                <option value="1">誰でも可</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 

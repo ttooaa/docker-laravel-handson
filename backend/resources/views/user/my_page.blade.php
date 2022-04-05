@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-mail mt-3">
-                    <label class="label-head">趣味</label>
+                    <label class="label-head my-1">趣味</label>
                     <div class="input-head">
                         <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
                     </div>
