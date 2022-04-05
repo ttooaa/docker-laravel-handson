@@ -15,15 +15,13 @@
 
                 <div class="form-head formPb">
                     <label class="label-head labelWidth">タイトル<span class="surely">必須</span></label>
-                    <div class="input-head">
-                        <input class="formTextTitle" type="text" name="title" placeholder="最大20文字まで">
-                    </div>
+                    <input class="formTextTitle" type="text" name="title" placeholder="最大20文字まで">
                 </div>
 
                 <div class="form-mail mt-3">
                     <label class="label-head labelWidth">ジャンル<span class="surely">必須</span></label>
                     <div class="input-head">
-                        <select class="formTextTitle" name="genre" id="">
+                        <select class="formTextTitle selectWidth" style="width: 300px;" name="genre" id="">
                             <option value="1">誰でも可</option>
                         </select>
                     </div>
