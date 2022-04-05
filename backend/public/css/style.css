@@ -824,6 +824,10 @@ display: none;
     margin-bottom: 0;
     word-wrap: break-word;
 }
+.timeBox {
+    width: 70%;
+    margin: 40px auto 0 auto;
+}
 
 .formSize {
     width: 70%;
