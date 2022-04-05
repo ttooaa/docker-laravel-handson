@@ -9,9 +9,9 @@
 <p class="title">お問い合わせ</p>
 
 <form class="inquiry-1 fonts" method="POST" action="">
-    <div class="form-sex">
-        <label class="label-sex dot-icon">性別<span class="surely">必須</span></label>
-        <div class="input-sex">
+    <div class="form-head">
+        <label class="label-head dot-icon">性別<span class="surely">必須</span></label>
+        <div class="input-head">
             <input id="man" type="radio" name="sex" value="man"><label for="man">男性</label>
             <input id="woman" type="radio" name="sex" value="woman"><label for="woman">女性</label>
             <input id="none" type="radio" name="sex" value="none"><label for="none">選択しない</label>

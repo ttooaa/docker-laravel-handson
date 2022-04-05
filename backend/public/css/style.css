@@ -378,17 +378,17 @@
     width: 60%;
     margin: 0 auto;
 }
-.form-sex {
+.form-head {
     height:30px;
     padding-bottom: 55px;
     margin-top: 90px;
     margin-bottom: 40px;
     border-bottom: 2px solid rgb(206, 206, 206);
 }
-.label-sex {
+.label-head {
     float: left;
 }
-.form-sex p {
+.form-head p {
     float: left;
     margin: 0 0 0 80px;
 }
@@ -403,16 +403,16 @@
     height: 0.95em;
     vertical-align: text-top;
 }
-.input-sex input {
+.input-head input {
     margin-left: 60px;
 }
-.input-sex input:first-child {
+.input-head input:first-child {
     margin-left: 80px;
 }
-.input-sex label {
+.input-head label {
     margin-left: 10px;
 }
-.input-sex select {
+.input-head select {
     margin-left: 55px;
     width: 200px;
     padding: 0 5px;
@@ -833,6 +833,12 @@ display: none;
 }
 .formText {
     margin-left: 147px !important;
+}
+.formTextTitle {
+    margin-left: 30px !important;
+}
+.labelWidth {
+    width: 165px;
 }
 .formText::placeholder {
     color: rgb(179, 179, 179);

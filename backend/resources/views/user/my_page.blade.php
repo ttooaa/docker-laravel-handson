@@ -7,7 +7,7 @@
 
 @section('content')
 {{-- <section id="back" style="height:1150px;""> --}}
-<section id="back"style="height: 1600px;">
+<section id="back"style="height: 1680px;">
     <div class="formScr">
         <div  class="formSize">
             <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
@@ -26,9 +26,9 @@
                     </div>
                 </div>
 
-                <div class="form-sex formPb formMt">
-                    <label class="label-sex">性別<span class="surely">必須</span></label>
-                    <div class="input-sex formMl">
+                <div class="form-head formPb formMt">
+                    <label class="label-head">性別<span class="surely">必須</span></label>
+                    <div class="input-head formMl">
                         <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
                         <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                         <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);"><label for="none">選択しない</label>
@@ -36,8 +36,17 @@
                 </div>
 
                 <div class="form-mail mt-3">
-                    <label class="label-sex">出身地<span class="surely">必須</span></label>
-                    <div class="input-sex">
+                    <label class="label-head">年齢<span class="surely">必須　</span></label>
+                    <div class="input-head">
+                        <select name="prefecture" id="">
+                            <option value="1">18</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-mail mt-3">
+                    <label class="label-head">出身地<span class="surely">必須</span></label>
+                    <div class="input-head">
                         <select name="prefecture" id="">
                             <option value="1">北海道</option>
                         </select>
@@ -45,8 +54,8 @@
                 </div>
 
                 <div class="form-mail mt-3">
-                    <label class="label-sex">趣味</label>
-                    <div class="input-sex">
+                    <label class="label-head">趣味</label>
+                    <div class="input-head">
                         <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
                     </div>
                 </div>
@@ -54,7 +63,7 @@
                 <div class="form-textarea">
                     <label class="mb-3">自己紹介文</label>
                     <div class="textarea-box">
-                        <textarea name="inquiry" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せて友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
+                        <textarea name="inquiry" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せる友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
                     </div>
                 </div>
 

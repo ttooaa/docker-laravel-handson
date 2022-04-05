@@ -4,7 +4,7 @@
 @auth
     <ul class="header-ul">
         <li><a  class="nav-link text-dark" href="{{ url('/join') }}">参加する</a></li>
-        <li><a  class="nav-link text-dark" href="#">募集する</a></li>
+        <li><a  class="nav-link text-dark" href="{{ url('/collect') }}">募集する</a></li>
         <li><a  class="nav-link text-dark" href="#">ステータス</a></li>
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
