@@ -754,6 +754,12 @@ a{color:inherit;text-decoration:none}
     border-radius: 30px;
     width: 85%;
 }
+.postCollect {
+    background: rgba(193, 226, 240, 0.9)
+}
+.postCollect img {
+    border: 2px solid #ffffff;
+}
 
 
 /* プロフィール作成画面 */
