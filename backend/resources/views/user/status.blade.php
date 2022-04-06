@@ -47,7 +47,7 @@
         </div>
 
         {{-- 参加者の場合 --}}
-        <div class="col-lg-12 mt-4 mx-auto p-4 noto postBack postCollect">
+        <div class="col-lg-12 mt-4 mx-auto p-4 noto postBack">
             <div class="d-flex flex-row">
                 <h2 class="m-0">誰でも可</h2> {{-- 分類 --}}
                 <h2 class="m-0">｜</h2> {{-- 空間 --}}
@@ -72,7 +72,7 @@
                     <h5 class="m-0 fw-bold">参加可能人数：あと3人</h5>
                 </div>
                 <div class="col-6 text-center"> {{-- 詳細分 --}}
-                    <h5 class="m-0 fw-bold">あなたは募集者です</h5>
+                    <h5 class="m-0 fw-bold">あなたは参加者です</h5>
                 </div>
             </div>
         </div>
