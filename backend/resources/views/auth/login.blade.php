@@ -3,12 +3,9 @@
 @section('title','キョウのワダイ-ログイン')
 
 @section('head_link')
-    <!-- Styles -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
 @endsection
+
+@section('position-1', 'linkPosition')
 
 @section('content')
     <div id="body">
@@ -28,7 +25,7 @@
                             @csrf
                             <div class="sign-in-htm">
                                 <div class="group">
-                                    <label for="name" class="label">{{ __('Name') }}</label>
+                                    <label for="name" class="label mb-2">{{ __('Name') }}</label>
                                     <input id="name" type="name" class="input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                     @error('name')
@@ -38,7 +35,7 @@
                                     @enderror
                                 </div>
                                 <div class="group">
-                                    <label for="pass" class="label">{{ __('Password') }}</label>
+                                    <label for="pass" class="label mb-2">{{ __('Password') }}</label>
                                     <input id="pass" type="password" class="input @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                     @error('password')
@@ -48,7 +45,7 @@
                                     @enderror
                                 </div>
 
-                                <div class="col-md-7 mb-3">
+                                <div class="col-md-7 mb-3 px-3">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -75,7 +72,7 @@
                                 @endif
 
                                 <div class="group">
-                                    <label for="email-2" class="label">{{ __('Email Address') }}</label>
+                                    <label for="email-2" class="label mb-2">{{ __('Email Address') }}</label>
                                     {{-- <input id="email-2" type="text" name="email" class="input" onkeyup="copyTo('email-2','email-1')"> --}}
                                     <input id="email-2" type="email" class="input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
 
+@section('position-2', 'linkPosition')
+
 @section('content')
 <p class="title new-user">{{ __('Register') }}</p>
 

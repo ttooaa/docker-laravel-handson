@@ -5,6 +5,8 @@
 @section('head_link')
 @endsection
 
+@section('position-2', 'linkPosition')
+
 @section('content')
 <section id="back"style="height: 1450px;">
     <div class="formScr">

@@ -5,6 +5,8 @@
 @section('head_link')
 @endsection
 
+@section('position-5', 'linkPosition')
+
 @section('content')
 <p class="title">お問い合わせ</p>
 

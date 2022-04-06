@@ -23,7 +23,7 @@
                 </form>
             </div>
         </li>
-        <li><a  class="nav-link text-dark" href="{{ url('/inquiry/input') }}">お問い合わせ</a></li>
+        <li><a  class="nav-link text-dark @yield('position-5')" href="{{ url('/inquiry/input') }}">お問い合わせ</a></li>
     </ul>
 @endauth
 
