@@ -23,6 +23,9 @@ Route::middleware(['verified'])->group(function(){
     Route::get('/collect', function () {
         return view('user.collect');
     });
+    Route::get('/status', function () {
+        return view('user.status');
+    });
     //メール認証ができたユーザーのみ実行できるルート
     //例えば今後機能を実装していく際にメール認証を終えていないユーザーが見えないようにする機能が欲しい場合にここに記述する
 });

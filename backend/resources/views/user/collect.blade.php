@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<section id="back"style="height: 1600px;">
+<section id="back"style="height: 1450px;">
     <div class="formScr">
         <div  class="formSize">
             <h1 class="formTitle">募集内容を入力してください</h1>
@@ -70,9 +70,10 @@
                 </div>
 
                 <div class="form-textarea">
-                    <label class="mb-3">詳細</label>
+                    <label class="mb-3">詳細<span class="optional" style="color: #888686;">任意</span></label>
+                    <p class="timeCaution">※最大150文字まで</p>
                     <div class="textarea-box">
-                        <textarea name="inquiry" maxlength="150" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せて友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
+                        <textarea name="inquiry" maxlength="150" style=height:200px; placeholder="例）最近はじめました。たかって言いますよろしくです！僕は話すのが苦手ですが話題があると話しやすいな〜って感じるんですよね！気軽にお話しましょう！"></textarea>
                     </div>
                 </div>
 
