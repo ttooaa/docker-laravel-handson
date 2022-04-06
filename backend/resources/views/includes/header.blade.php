@@ -3,15 +3,15 @@
 
 @auth
     <ul class="header-ul">
-        <li><a  class="nav-link text-dark" href="{{ url('/join') }}">参加する</a></li>
-        <li><a  class="nav-link text-dark" href="{{ url('/collect') }}">募集する</a></li>
-        <li><a  class="nav-link text-dark" href="{{ url('/status') }}">ステータス</a></li>
+        <li><a  class="nav-link text-dark @yield('position-1') " href="{{ url('/join') }}">参加する</a></li>
+        <li><a  class="nav-link text-dark @yield('position-2')" href="{{ url('/collect') }}">募集する</a></li>
+        <li><a  class="nav-link text-dark @yield('position-3')" href="{{ url('/status') }}">ステータス</a></li>
         <li class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            <a id="navbarDropdown" class="nav-link text-dark dropdown-toggle @yield('position-4')" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}さん
             </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <a  class="dropdown-item" href="{{ url('/my_page') }}">プロフィール編集</a>
+                <a  class="dropdown-item @yield('position-4')" href="{{ url('/my_page') }}">プロフィール編集</a>
                 <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
                                  document.getElementById('logout-form').submit();">
@@ -29,10 +29,10 @@
 
 @guest
     <ul class="header-ul">
-        <li><a  class="nav-link text-dark" href="{{ route('login') }}">ログイン</a></li>
+        <li><a  class="nav-link text-dark @yield('position-1')" href="{{ route('login') }}">ログイン</a></li>
         @if (Route::has('register'))
-        <li><a  class="nav-link text-dark" href="{{ route('register') }}">新規登録</a></li>
+        <li><a  class="nav-link text-dark @yield('position-2')" href="{{ route('register') }}">新規登録</a></li>
         @endif
-        <li><a  class="nav-link text-dark" href="{{ url('/inquiry/input') }}">お問い合わせ</a></li>
+        <li><a  class="nav-link text-dark @yield('position-5')" href="{{ url('/inquiry/input') }}">お問い合わせ</a></li>
     </ul>
 @endguest

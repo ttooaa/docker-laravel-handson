@@ -30,8 +30,10 @@
     margin-top: 1rem;
     list-style: none;
 }
-.header-a {
-    color:black;
+.linkPosition {
+    color: red !important;
+    text-decoration:underline;
+    text-decoration-color:#FF0000;
 }
 
 /* フッター */

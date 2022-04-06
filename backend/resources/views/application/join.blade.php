@@ -2,6 +2,8 @@
 @extends('layouts.base')
 @section('title','キョウのワダイ-参加一覧')
 
+@section('position-1', 'linkPosition')
+
 @section('head_link')
 @endsection
 
