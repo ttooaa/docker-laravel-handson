@@ -17,12 +17,15 @@ class CreateRoomsTable extends Migration
             $table->id();
             $table->foreignId('host_id')->constrained('users');
             //member_user_idをどうするか
-            $table->foreignId('member_id')->constrained('users');
+            $table->foreignId('member_id')
+            ->nullable()
+            ->constrained('users');
             $table->string('title');
+            $table->string('genre');
             $table->string('detail')->nullable();
             $table->dateTime('start_time');
             $table->dateTime('end_time');
-            $table->integer('number_of_perple');
+            $table->integer('number_of_people');
             $table->timestamps();
         });
     }

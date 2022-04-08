@@ -11,5 +11,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PrefectureTableSeeder::class);
         // \App\Models\User::factory(10)->create();
         $this->call(UsersTableSeeder::class);
+        $this->call(RoomsTableSeeder::class);
     }
 }
