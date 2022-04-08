@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
             'prefecture_id' => '1',
             'email' => 'exit@exit.com',
             'name' => 'tanakaa',
-            'password' => '321tanaka',
+            'password' => hash::make('321tanaka'),
             'sex' => '1',
             'hobby' => '釣り',
             'profile' => '細身低身長',
