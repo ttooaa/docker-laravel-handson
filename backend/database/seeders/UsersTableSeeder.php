@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('users')->insert(
         [
             'prefecture_id' => '1',
             'email' => 'exit@exit.com',
@@ -44,6 +44,6 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]
-        ]);
+        );
     }
 }
