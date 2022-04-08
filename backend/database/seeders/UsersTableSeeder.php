@@ -21,7 +21,8 @@ class UsersTableSeeder extends Seeder
         [
             'prefecture_id' => '1',
             'email' => 'exit@exit.com',
-            'name' => 'tanakaa',
+            'email_verified_at' => Carbon::now(),
+            'name' => 'tanaka',
             'password' => hash::make('321tanaka'),
             'sex' => '1',
             'hobby' => '釣り',
@@ -34,6 +35,7 @@ class UsersTableSeeder extends Seeder
             'prefecture_id' => '2',
             'name' => Str::random(5),
             'email' => Str::random(10).'@exit.com',
+            'email_verified_at' => Carbon::now(),
             'password' => Hash::make('password'),
             'sex' => '1',
             'hobby' => '釣り',
