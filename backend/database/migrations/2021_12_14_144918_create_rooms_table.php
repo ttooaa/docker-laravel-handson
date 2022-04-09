@@ -17,7 +17,13 @@ class CreateRoomsTable extends Migration
             $table->id();
             $table->foreignId('host_id')->constrained('users');
             //member_user_idをどうするか
-            $table->foreignId('member_id')
+            $table->foreignId('member_1_id')
+            ->nullable()
+            ->constrained('users');
+            $table->foreignId('member_2_id')
+            ->nullable()
+            ->constrained('users');
+            $table->foreignId('member_3_id')
             ->nullable()
             ->constrained('users');
             $table->string('title');
