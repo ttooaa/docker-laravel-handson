@@ -15,8 +15,8 @@ class CreateRoomsTable extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
+            // ホスト1人とNULL許容のメンバー3人
             $table->foreignId('host_id')->constrained('users');
-            //member_user_idをどうするか
             $table->foreignId('member_1_id')
             ->nullable()
             ->constrained('users');
