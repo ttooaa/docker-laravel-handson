@@ -22,10 +22,10 @@ class CreateRoomsTable extends Migration
             ->constrained('users');
             $table->string('title');
             $table->string('genre');
+            $table->integer('number_of_people');
             $table->string('detail')->nullable();
             $table->dateTime('start_time');
             $table->dateTime('end_time');
-            $table->integer('number_of_people');
             $table->timestamps();
         });
     }

@@ -19,10 +19,10 @@ class RoomsTableSeeder extends Seeder
             'host_id' => '1',
             'title' => 'お話しましょ',
             'genre' => '誰でも可',
+            'number_of_people' => '4',
             'detail' => 'よろしくたのんます！',
             'start_time' => new Carbon('2022-04-09 0:30:00'),
             'end_time' => new Carbon('2022-04-09 1:00:00'),
-            'number_of_people' => '4',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
