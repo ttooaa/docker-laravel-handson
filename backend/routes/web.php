@@ -56,9 +56,3 @@ Route::get('/user/compleate', function () {
 Route::get('/verifyorigin', function () {
     return view('auth.verifyorigin');
 });
-
-// お試し
-Route::get('/log/{post}', [UserController::class, 'show']);
-
-//テスト
-Route::get('/user/index', [UserController::class, 'index']);
