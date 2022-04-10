@@ -60,7 +60,7 @@
                 </div>
                 <div class="row align-item-center mt-3">
                     <div class="col-3"> {{-- 詳細分 --}}
-                        <h5 class="m-0">はじめまして</h5>
+                        <h5 class="m-0">{{ $room->number_of_people }}人/最大{{ $room->maximum_number_of_people }}人</h5>
                     </div>
                     <div class="col-3"> {{-- 詳細分 --}}
                         <h5 class="m-0">開始時間　{{ $room->start_time }}</h5>
@@ -68,7 +68,6 @@
                     <div class="col-3"> {{-- 詳細分 --}}
                         <h5 class="m-0">終了時間　{{ $room->end_time }}</h5>
                     </div>
-                    {{ dd($room) }}
                     <div class="col-3 text-end"> {{-- 詳細分 --}}
                         <h5 class="m-0">はじめまして</h5>
                     </div>

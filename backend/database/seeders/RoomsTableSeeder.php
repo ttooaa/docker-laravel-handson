@@ -22,8 +22,8 @@ class RoomsTableSeeder extends Seeder
             'maximum_number_of_people' => '4',
             'number_of_people' => '4',
             'detail' => 'よろしくたのんます！',
-            'start_time' => new Carbon('2022-04-09 0:30:00'),
-            'end_time' => new Carbon('2022-04-09 1:00:00'),
+            'start_time' => Carbon::create('2022-04-09 0:30:00'),
+            'end_time' => Carbon::create('2022-04-09 1:30:00'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
