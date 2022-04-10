@@ -18,7 +18,8 @@ class RoomsTableSeeder extends Seeder
         DB::table('rooms')->insert([
             'host_id' => '1',
             'title' => 'お話しましょ',
-            'genre' => '誰でも可',
+            'genre' => '1',
+            'maximum_number_of_people' => '4',
             'number_of_people' => '4',
             'detail' => 'よろしくたのんます！',
             'start_time' => new Carbon('2022-04-09 0:30:00'),

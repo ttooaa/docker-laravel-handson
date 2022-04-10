@@ -68,6 +68,7 @@
                     <div class="col-3"> {{-- 詳細分 --}}
                         <h5 class="m-0">終了時間　{{ $room->end_time }}</h5>
                     </div>
+                    {{ dd($room) }}
                     <div class="col-3 text-end"> {{-- 詳細分 --}}
                         <h5 class="m-0">はじめまして</h5>
                     </div>
