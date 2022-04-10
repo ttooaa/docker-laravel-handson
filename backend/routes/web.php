@@ -30,7 +30,8 @@ Route::middleware(['verified'])->group(function(){
     //例えば今後機能を実装していく際にメール認証を終えていないユーザーが見えないようにする機能が欲しい場合にここに記述する
 });
 
-Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
+// Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
+Route::get('/join', [App\Http\Controllers\RoomController::class, 'index'])->name('join');
 
 Route::get('/welcome', function () {
     return view('welcome');

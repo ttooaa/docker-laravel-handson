@@ -27,7 +27,7 @@ class CreateRoomsTable extends Migration
             ->nullable()
             ->constrained('users');
             $table->string('title');
-            $table->string('genre');
+            $table->integer('genre');
             $table->integer('number_of_people');
             $table->string('detail')->nullable();
             $table->dateTime('start_time');

@@ -36,41 +36,44 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 mt-4 mx-auto p-4 noto postBack">
-            <div class="d-flex flex-row">
-                <h2 class="m-0">誰でも可</h2> {{-- 分類 --}}
-                <h2 class="m-0">｜</h2> {{-- 空間 --}}
-                <h2 class="m-0">気軽にお話しましょう！</h2> {{-- title部分 --}}
-            </div>
-            {{-- <div class="row mt-3" style="height: 96px;"> --}}
-            <div class="row mt-3">
-                <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
-                    <div class="row">
-                        <img class="col-lg-3 p-0 ms-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
-                        <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
-                        <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
-                        <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+
+        @foreach ($rooms as $room)
+            <div class="col-lg-12 mt-4 mx-auto p-4 noto postBack">
+                <div class="d-flex flex-row">
+                    <h2 class="m-0">{{ $room->genre }}</h2> {{-- 分類 --}}
+                    <h2 class="m-0">｜</h2> {{-- 空間 --}}
+                    <h2 class="m-0">{{ $room->title }}</h2> {{-- title部分 --}}
+                </div>
+                {{-- <div class="row mt-3" style="height: 96px;"> --}}
+                <div class="row mt-3">
+                    <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
+                        <div class="row">
+                            <img class="col-lg-3 p-0 ms-3 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                            <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                            <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                            <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-4 align-self-center"> {{-- 詳細分 150文字以内 --}}
+                        <p class="my-3">{{ $room->detail }}</p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-4 align-self-center"> {{-- 詳細分 150文字以内 --}}
-                    <p class="my-3">１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６</p>
+                <div class="row align-item-center mt-3">
+                    <div class="col-3"> {{-- 詳細分 --}}
+                        <h5 class="m-0">はじめまして</h5>
+                    </div>
+                    <div class="col-3"> {{-- 詳細分 --}}
+                        <h5 class="m-0">開始時間 {{ $room->start_time }}</h5>
+                    </div>
+                    <div class="col-3"> {{-- 詳細分 --}}
+                        <h5 class="m-0">終了時間 {{ $room->end_time }}</h5>
+                    </div>
+                    <div class="col-3 text-end"> {{-- 詳細分 --}}
+                        <h5 class="m-0">はじめまして</h5>
+                    </div>
                 </div>
             </div>
-            <div class="row align-item-center mt-3">
-                <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして</h5>
-                </div>
-                <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして</h5>
-                </div>
-                <div class="col-3"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして</h5>
-                </div>
-                <div class="col-3 text-end"> {{-- 詳細分 --}}
-                    <h5 class="m-0">はじめまして</h5>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </section>
 @endsection
