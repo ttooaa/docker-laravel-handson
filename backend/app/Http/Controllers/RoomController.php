@@ -9,7 +9,7 @@ class RoomController extends Controller
 {
     public function index()
     {
-        $rooms = Room::all();
+        $rooms = Room::all()->paginate(8);
         return view('application.join', compact('rooms'));
     }
 }
