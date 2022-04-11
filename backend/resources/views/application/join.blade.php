@@ -69,7 +69,7 @@
                         <h5 class="m-0">終了時間　{{ $room->end_time }}</h5>
                     </div>
                     <div class="col-3 text-end"> {{-- 詳細分 --}}
-                        <h5 class="m-0">はじめまして</h5>
+                        <h5 class="m-0">{{ $room->created_at->diffForHumans() }}</h5>
                     </div>
                 </div>
             </div>
