@@ -75,5 +75,8 @@
             </div>
         @endforeach
     </div>
+    <div class="">
+        {{ $rooms->links() }}
+    </div>
 </section>
 @endsection
