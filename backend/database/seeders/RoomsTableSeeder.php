@@ -23,20 +23,20 @@ class RoomsTableSeeder extends Seeder
             'maximum_number_of_people' => '4',
             'number_of_people' => '4',
             'detail' => 'aaa',
-            'start_time' => Carbon::create('2022-04-09 0:30:00'),
-            'end_time' => Carbon::create('2022-04-09 1:30:00'),
+            'start_time' => date('G:i(j日)',strtotime('+15 min')),
+            'end_time' => date('G:i(j日)',strtotime('+15 min')),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
             ],
             [
                 'host_id' => '1',
                 'title' => 'お話しましょ',
-                'genre' => '1',
+                'genre' => '2',
                 'maximum_number_of_people' => '4',
                 'number_of_people' => '4',
                 'detail' => 'よろしくたのんます！',
-                'start_time' => Carbon::create('2022-04-09 0:30:00'),
-                'end_time' => Carbon::create('2022-04-09 1:30:00'),
+                'start_time' => date('G:i(j日)',strtotime('+30 min')),
+                'end_time' => date('G:i(j日)',strtotime('+60 min')),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]
