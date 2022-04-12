@@ -9,7 +9,7 @@
 
 @section('content')
 {{-- <section id="back" style="height:1150px;""> --}}
-<section id="back"style="height: 1680px;">
+<section id="back">
     <div class="formScr">
         <div  class="formSize">
             <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>

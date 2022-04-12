@@ -8,7 +8,7 @@
 @section('position-2', 'linkPosition')
 
 @section('content')
-<section id="back"style="height: 1450px;">
+<section id="back">
     <div class="formScr">
         <div  class="formSize">
             <h1 class="formTitle">募集内容を入力してください</h1>

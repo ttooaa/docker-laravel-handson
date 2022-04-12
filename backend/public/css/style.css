@@ -727,7 +727,7 @@ a{color:inherit;text-decoration:none}
 /* アプリに関連するCSS */
 #back {
 	margin: 0;
-    padding-top: 100px;
+    padding-top: 5rem;
     padding-bottom: 3rem;
 	color:#000000;
 	background:#c8c8c8;

@@ -11,7 +11,7 @@
 <section id="back">
     <div class="container pb-4 border-bottom border-dark border-3">
         {{-- 項目部分 --}}
-        <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
+        <div class="row mt-5 pb-4 align-items-center noto border-bottom border-dark border-3">
             <div class="col-xl-7 col-lg-8">
                 <h1 class="text-center condition">現在の参加 or 募集ステータス</h1>
             </div>

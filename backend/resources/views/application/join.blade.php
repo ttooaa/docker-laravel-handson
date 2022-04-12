@@ -11,7 +11,7 @@
 <section id="back">
     <div class="container pb-4 border-bottom border-dark border-3">
         {{-- 項目部分 --}}
-        <div class="row mt-3 pb-4 align-items-center noto border-bottom border-dark border-3">
+        <div class="row mt-5 pb-4 align-items-center noto border-bottom border-dark border-3">
             <div class="col-xl-3 col-lg-4">
                 <h1 class="text-center condition">最近の投稿</h1>
             </div>
