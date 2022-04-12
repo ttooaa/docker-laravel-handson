@@ -32,7 +32,7 @@ class CreateRoomsTable extends Migration
             $table->integer('number_of_people');
             $table->string('detail')->nullable();
             $table->string('start_time');
-            $table->string('end_time');
+            $table->string('hold_time');
             $table->timestamps();
         });
     }

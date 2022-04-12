@@ -66,7 +66,7 @@
                         <h5 class="m-0">開始時間　{{ $room->start_time }}</h5>
                     </div>
                     <div class="col-3"> {{-- 終了時刻 --}}
-                        <h5 class="m-0">終了時間　{{ $room->end_time }}</h5>
+                        <h5 class="m-0">開催時間　{{ $room->hold_time }}</h5>
                     </div>
                     <div class="col-3 text-end"> {{-- 何分前の投稿か --}}
                         <h5 class="m-0">{{ $room->created_at->diffForHumans() }}</h5>

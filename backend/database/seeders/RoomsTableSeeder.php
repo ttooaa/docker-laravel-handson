@@ -23,8 +23,8 @@ class RoomsTableSeeder extends Seeder
             'maximum_number_of_people' => '4',
             'number_of_people' => '4',
             'detail' => 'aaa',
-            'start_time' => date('G:i(j日)',strtotime('+15 min')),
-            'end_time' => date('G:i(j日)',strtotime('+15 min')),
+            'start_time' => date('G:i',strtotime('+45 min')),
+            'hold_time' => '1時間',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
             ],
@@ -35,8 +35,8 @@ class RoomsTableSeeder extends Seeder
                 'maximum_number_of_people' => '4',
                 'number_of_people' => '4',
                 'detail' => 'よろしくたのんます！',
-                'start_time' => date('G:i(j日)',strtotime('+30 min')),
-                'end_time' => date('G:i(j日)',strtotime('+60 min')),
+                'start_time' => date('G:i',strtotime('+60 min')),
+                'hold_time' => '15分',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]
