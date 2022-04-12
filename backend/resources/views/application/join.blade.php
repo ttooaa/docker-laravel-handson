@@ -59,16 +59,16 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-3"> {{-- 詳細分 --}}
+                    <div class="col-3"> {{-- 参加人数/最大人数 --}}
                         <h5 class="m-0">{{ $room->number_of_people }}人/最大{{ $room->maximum_number_of_people }}人</h5>
                     </div>
-                    <div class="col-3"> {{-- 詳細分 --}}
+                    <div class="col-3"> {{-- 開始時刻 --}}
                         <h5 class="m-0">開始時間　{{ $room->start_time }}</h5>
                     </div>
-                    <div class="col-3"> {{-- 詳細分 --}}
+                    <div class="col-3"> {{-- 終了時刻 --}}
                         <h5 class="m-0">終了時間　{{ $room->end_time }}</h5>
                     </div>
-                    <div class="col-3 text-end"> {{-- 詳細分 --}}
+                    <div class="col-3 text-end"> {{-- 何分前の投稿か --}}
                         <h5 class="m-0">{{ $room->created_at->diffForHumans() }}</h5>
                     </div>
                 </div>
