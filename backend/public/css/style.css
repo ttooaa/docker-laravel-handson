@@ -868,6 +868,10 @@ display: none;
     font-weight:normal;
     margin-bottom: 5rem;
 }
+/* ペジネーションの設定 */
+.pagination {
+    justify-content: center;
+}
 
 @media screen and (max-width:992px) {
     .condition {
