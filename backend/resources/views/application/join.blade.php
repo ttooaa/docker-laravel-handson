@@ -58,7 +58,7 @@
                         <p class="my-3">{{ $room->detail }}</p>
                     </div>
                 </div>
-                <div class="row align-item-center mt-3">
+                <div class="row mt-3">
                     <div class="col-3"> {{-- 詳細分 --}}
                         <h5 class="m-0">{{ $room->number_of_people }}人/最大{{ $room->maximum_number_of_people }}人</h5>
                     </div>
@@ -75,7 +75,7 @@
             </div>
         @endforeach
     </div>
-    <div class="">
+    <div class="mt-5">
         {{ $rooms->links() }}
     </div>
 </section>
