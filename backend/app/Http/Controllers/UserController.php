@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Prefecture;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -63,7 +64,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
