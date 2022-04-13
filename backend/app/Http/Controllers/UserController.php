@@ -62,16 +62,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
         $ages = [];
-        for ($age=18; $age < 60; $age++) {
+        for ($age=18; $age < 61; $age++) {
             $ages[] = $age;
         }
 
-        $prefecture = Prefecture::get();
+        $prefectures = Prefecture::get();
 
-        return view('user.edit', compact('ages', 'prefecture'));
+        return view('user.profile', compact('ages', 'prefectures'));
     }
 
     /**

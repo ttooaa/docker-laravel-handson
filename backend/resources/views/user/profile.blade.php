@@ -40,8 +40,12 @@
                 <div class="form-mail mt-3">
                     <label class="label-head">年齢<span class="surely">必須　</span></label>
                     <div class="input-head">
-                        <select name="prefecture" id="">
-                            <option value="1">18</option>
+                        <select name="age">
+                            @foreach ($ages as $age)
+                                <option value="{{ $age }}">
+                                    {{ $age }}歳
+                                </option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -49,8 +53,12 @@
                 <div class="form-mail mt-3">
                     <label class="label-head">出身地<span class="surely">必須</span></label>
                     <div class="input-head">
-                        <select name="prefecture" id="">
-                            <option value="1">北海道</option>
+                        <select name="prefecture">
+                            @foreach ($prefectures as $prefecture)
+                                <option value="{{ $prefecture->id }}">
+                                    {{ $prefecture->prefecture_name }}
+                                </option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
