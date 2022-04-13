@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -31,7 +32,7 @@ Route::middleware(['verified'])->group(function(){
 });
 
 // Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
-Route::get('/join', [App\Http\Controllers\RoomController::class, 'index'])->name('join');
+Route::get('/join', [RoomController::class, 'index'])->name('join');
 
 Route::get('/welcome', function () {
     return view('welcome');
