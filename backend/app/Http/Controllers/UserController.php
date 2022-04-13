@@ -64,7 +64,14 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        
+        $ages = [];
+        for ($age=18; $age < 60; $age++) {
+            $ages[] = $age;
+        }
+
+        $prefecture = Prefecture::get();
+
+        return view('user.edit', compact('ages', 'prefecture'));
     }
 
     /**

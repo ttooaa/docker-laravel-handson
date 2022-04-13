@@ -18,9 +18,8 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
-    Route::get('/my_page', function () {
-        return view('user.my_page');
-    });
+    Route::get('/user/profile', [UserController::class, 'show'])->name('profile');
+
     Route::get('/collect', function () {
         return view('user.collect');
     });
@@ -37,7 +36,7 @@ Route::get('/join', [RoomController::class, 'index'])->name('join');
 // いずれはresourcでUserControllerを回していく
 // Route::resource('users', Usercontroller::class);
 
-Route::get('/users/profile', [UserController::class, 'show']);
+Route::get('/users/profile', [UserController::class, 'show'])->name('profile');
 
 Route::get('/welcome', function () {
     return view('welcome');
