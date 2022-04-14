@@ -33,7 +33,7 @@
                     <div class="input-head formMl">
                         <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
                         <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
-                        <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);"><label for="none">選択しない</label>
+                        <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);" checked><label for="none">選択しない</label>
                     </div>
                 </div>
 
