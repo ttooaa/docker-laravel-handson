@@ -17,33 +17,35 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert(
-        [
-            'prefecture_id' => '1',
-            'email' => 'exit@exit.com',
-            'email_verified_at' => Carbon::now(),
-            'name' => 'tanaka',
-            'password' => hash::make('321tanaka'),
-            'sex' => '1',
-            'hobby' => '釣り',
-            'profile' => '細身低身長',
-            'image' => 'http//:tanaka.co.jp',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ],
-        [
-            'prefecture_id' => '2',
-            'name' => Str::random(5),
-            'email' => Str::random(10).'@exit.com',
-            'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('password'),
-            'sex' => '1',
-            'hobby' => '釣り',
-            'profile' => '細身低身長',
-            'image' => 'http//:tanaka.co.jp',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]
-        );
+        DB::table('users')->insert([
+            [
+                'prefecture_id' => '13',
+                'email' => 'exit@exit.com',
+                'email_verified_at' => Carbon::now(),
+                'name' => 'tanaka',
+                'password' => hash::make('321tanaka'),
+                'sex' => 'woman',
+                'age' => '20',
+                'hobby' => '釣り',
+                'profile' => '細身低身長',
+                'image' => 'http//:tanaka.co.jp',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'prefecture_id' => '23',
+                'name' => Str::random(5),
+                'email' => Str::random(10).'@exit.com',
+                'email_verified_at' => Carbon::now(),
+                'password' => Hash::make('password'),
+                'sex' => 'man',
+                'age' => '23',
+                'hobby' => '釣り',
+                'profile' => '細身低身長',
+                'image' => 'http//:tanaka.co.jp',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ]
+        ]);
     }
 }
