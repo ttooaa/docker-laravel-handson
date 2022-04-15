@@ -64,14 +64,13 @@ class UserController extends Controller
      */
     public function edit()
     {
+        $user = Auth::user();
         $ages = [];
         for ($age=18; $age < 61; $age++) {
             $ages[] = $age;
         }
-
         $prefectures = Prefecture::get();
-
-        return view('user.profile', compact('ages', 'prefectures'));
+        return view('user.profile', compact('user','ages', 'prefectures'));
     }
 
     /**

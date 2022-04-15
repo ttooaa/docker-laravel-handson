@@ -42,9 +42,15 @@
                     <div class="input-head">
                         <select name="age">
                             @foreach ($ages as $age)
-                                <option value="{{ $age }}">
-                                    {{ $age }}歳
-                                </option>
+                                @if ($user->age == $age)
+                                    <option value="{{ $age }}" selected>
+                                        {{ $age }}歳
+                                    </option>
+                                @else
+                                    <option value="{{ $age }}">
+                                        {{ $age }}歳
+                                    </option>
+                                @endif
                             @endforeach
                         </select>
                     </div>
@@ -55,9 +61,15 @@
                     <div class="input-head">
                         <select name="prefecture">
                             @foreach ($prefectures as $prefecture)
-                                <option value="{{ $prefecture->id }}">
-                                    {{ $prefecture->prefecture_name }}
-                                </option>
+                                @if ($user->prefecture_id == $prefecture->id)
+                                    <option value="{{ $prefecture->id }}" selected>
+                                        {{ $prefecture->prefecture_name }}
+                                    </option>
+                                @else
+                                    <option value="{{ $prefecture->id }}">
+                                        {{ $prefecture->prefecture_name }}
+                                    </option>
+                                @endif
                             @endforeach
                         </select>
                     </div>
@@ -66,7 +78,11 @@
                 <div class="form-mail mt-3">
                     <label class="label-head my-1">趣味</label>
                     <div class="input-head">
-                        <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
+                        @empty ($user->hobby)
+                            <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
+                        @else
+                            <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc." value="{{ $user->hobby }}">
+                        @endempty
                     </div>
                 </div>
 

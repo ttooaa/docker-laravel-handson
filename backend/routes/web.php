@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
-    Route::get('/user/profile', [UserController::class, 'edit'])->name('profile');
+    Route::get('/profile', [UserController::class, 'edit'])->name('profile');
 
     Route::get('/collect', function () {
         return view('user.collect');
