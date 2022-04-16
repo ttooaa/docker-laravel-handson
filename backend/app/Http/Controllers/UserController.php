@@ -82,7 +82,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //編集の反映はこのメソッドを使う
     }
 
     /**
