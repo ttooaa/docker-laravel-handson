@@ -36,11 +36,11 @@
                             <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                             <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);" checked><label for="none">選択しない</label>
                         @else
-                            @if ($user->sex === 'man')
+                            @if ($user->sex == 'man')
                                 <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man" selected>男性</label>
                                 <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                                 <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);" checked><label for="none">選択しない</label>
-                            @elseif ($user->sex === 'woman')
+                            @elseif ($user->sex == 'woman')
                                 <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
                                 <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman" selected>女性</label>
                                 <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);" checked><label for="none">選択しない</label>
@@ -52,7 +52,7 @@
                         @endempty
                     </div>
                 </div>
-                
+
                 <div class="form-mail mt-3">
                     <label class="label-head">年齢<span class="surely">必須　</span></label>
                     <div class="input-head">
