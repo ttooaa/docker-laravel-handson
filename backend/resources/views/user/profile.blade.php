@@ -12,8 +12,11 @@
 <section id="back">
     <div class="formScr">
         <div  class="formSize">
-            <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
-
+            @empty ($user->sex)
+                <h1 class="formTitle">まずは簡単な自己紹介を作成しよう</h1>
+            @else
+                <h1 class="formTitle">自己紹介の編集</h1>
+            @endempty
             <form method="POST" action="" enctype="multipart/form-data">
 
                 <div class="formImg row mx-0">
@@ -32,20 +35,20 @@
                     <label class="label-head">性別<span class="surely">必須</span></label>
                     <div class="input-head formMl">
                         @empty ($user->sex)
-                            <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
+                            <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man" required>男性</label>
                             <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                             <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);"><label for="none">選択しない</label>
                         @else
                             @if ($user->sex == 'man')
-                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);" checked><label for="man">男性</label>
+                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);" checked><label for="man" required>男性</label>
                                 <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                                 <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);"><label for="none">選択しない</label>
                             @elseif ($user->sex == 'woman')
-                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
+                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man" required>男性</label>
                                 <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);" checked><label for="woman">女性</label>
                                 <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);"><label for="none">選択しない</label>
                             @else
-                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man">男性</label>
+                                <input id="man" type="radio" name="sex" value="man" style="transform:scale(1.5);"><label for="man" required>男性</label>
                                 <input id="woman" type="radio" name="sex" value="woman" style="transform:scale(1.5);"><label for="woman">女性</label>
                                 <input id="none" type="radio" name="sex" value="none" style="transform:scale(1.5);" checked><label for="none">選択しない</label>
                             @endif
