@@ -80,10 +80,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
+        dd($request->all());
         //編集の反映はこのメソッドを使う
-        $user = Auth::user();
+        $user = User::find($id);
 
         $user->sex = $request->sex;
         $user->age = $request->age;
@@ -92,6 +93,7 @@ class UserController extends Controller
         $user->profile = $request->profile;
 
         $user -> save();
+        // return redirect()->route('join');
         return redirect()->route('join');
     }
 
