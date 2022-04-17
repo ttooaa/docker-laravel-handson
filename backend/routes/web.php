@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
+    // いずれはresourcでUserControllerを回していく
     // Route::resource('user', [UserController::class]);
     Route::get('profile', [UserController::class, 'edit'])->name('profile');
     Route::post('profile/post', [UserController::class, 'update'])->name('update');
@@ -34,9 +35,6 @@ Route::middleware(['verified'])->group(function(){
 
 // Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
 Route::get('/join', [RoomController::class, 'index'])->name('join');
-
-// いずれはresourcでUserControllerを回していく
-// Route::resource('users', Usercontroller::class);
 
 // Route::get('/users/profile', [UserController::class, 'show'])->name('profile');
 
