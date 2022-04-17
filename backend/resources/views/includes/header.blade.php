@@ -3,7 +3,7 @@
 
 @auth
     <ul class="header-ul">
-        <li><a  class="nav-link text-dark @yield('position-1') " href="{{ url('/join') }}">参加する</a></li>
+        <li><a  class="nav-link text-dark @yield('position-1') " href="{{ route('join') }}">参加する</a></li>
         <li><a  class="nav-link text-dark @yield('position-2')" href="{{ url('/collect') }}">募集する</a></li>
         <li><a  class="nav-link text-dark @yield('position-3')" href="{{ url('/status') }}">ステータス</a></li>
         <li class="nav-item dropdown">

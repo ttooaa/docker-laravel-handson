@@ -17,7 +17,7 @@
             @else
                 <h1 class="formTitle">自己紹介の編集</h1>
             @endempty
-            <form method="POST" action="" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('update') }}" enctype="multipart/form-data">
 
                 <div class="formImg row mx-0">
                     <div class="col-6 d-flex justify-content-center">
@@ -78,7 +78,7 @@
                 <div class="form-mail mt-3">
                     <label class="label-head">出身地<span class="surely">必須</span></label>
                     <div class="input-head">
-                        <select name="prefecture">
+                        <select name="prefecture_id">
                             @foreach ($prefectures as $prefecture)
                                 @if ($user->prefecture_id == $prefecture->id)
                                     <option value="{{ $prefecture->id }}" selected>
@@ -98,9 +98,9 @@
                     <label class="label-head my-1">趣味</label>
                     <div class="input-head">
                         @empty ($user->hobby)
-                            <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc.">
+                            <input class="formText" type="text" name="hobby" placeholder="映画、釣り、旅行、etc.">
                         @else
-                            <input class="formText" type="text" name="hoby" placeholder="映画、釣り、旅行、etc." value="{{ $user->hobby }}">
+                            <input class="formText" type="text" name="hobby" placeholder="映画、釣り、旅行、etc." value="{{ $user->hobby }}">
                         @endempty
                     </div>
                 </div>
@@ -109,9 +109,9 @@
                     <label class="mb-3">自己紹介文</label>
                     <div class="textarea-box">
                         @empty ($user->profile)
-                            <textarea name="inquiry" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せる友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
+                            <textarea name="profile" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せる友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！"></textarea>
                         @else
-                            <textarea name="inquiry" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せる友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！">{{ $user->profile }}</textarea>
+                            <textarea name="profile" maxlength="400" style=height:200px; placeholder="例）お話するのが大好きです。気軽に話せる友達が作りたいと思って始めてみました。どうぞよろしくおねがいします！">{{ $user->profile }}</textarea>
                         @endempty
                     </div>
                 </div>
