@@ -21,7 +21,7 @@ Route::middleware(['verified'])->group(function(){
     // いずれはresourcでUserControllerを回していく
     Route::resource('user', UserController::class);
     // Route::get('profile', [UserController::class, 'edit'])->name('profile');
-    // Route::post('profile/post', [UserController::class, 'update'])->name('update');
+    // Route::post('profile/{progile}/post', [UserController::class, 'update'])->name('update');
 
     Route::get('/collect', function () {
         return view('user.collect');
