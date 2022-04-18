@@ -19,9 +19,9 @@ Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
     // いずれはresourcでUserControllerを回していく
-    // Route::resource('user', [UserController::class]);
-    Route::get('profile', [UserController::class, 'edit'])->name('profile');
-    Route::post('profile/post', [UserController::class, 'update'])->name('update');
+    Route::resource('user', UserController::class);
+    // Route::get('profile', [UserController::class, 'edit'])->name('profile');
+    // Route::post('profile/post', [UserController::class, 'update'])->name('update');
 
     Route::get('/collect', function () {
         return view('user.collect');
@@ -58,7 +58,4 @@ Route::get('/inquiry/compleate', function () {
 });
 Route::get('/user/compleate', function () {
     return view('pages.user_compleate');
-});
-Route::get('/verifyorigin', function () {
-    return view('auth.verifyorigin');
 });

@@ -62,13 +62,14 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit($id)
     {
         $user = Auth::user();
         $ages = [];
         for ($age=18; $age < 61; $age++) {
             $ages[] = $age;
         }
+
         $prefectures = Prefecture::get();
         return view('user.profile', compact('user','ages', 'prefectures'));
     }
@@ -80,11 +81,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         //編集の反映はこのメソッドを使う
-        $user = User::find($id);
+        $user = User::find(Auth::id());
 
         $user->sex = $request->sex;
         $user->age = $request->age;
