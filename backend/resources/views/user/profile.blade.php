@@ -18,6 +18,8 @@
                 <h1 class="formTitle">自己紹介の編集</h1>
             @endempty
             <form action="{{ route('user.update', Auth::id()) }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('PATCH')
                 <div class="formImg row mx-0">
                     <div class="col-6 d-flex justify-content-center">
                         <img class="fileAvatar" id="preview">
