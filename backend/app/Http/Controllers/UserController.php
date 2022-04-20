@@ -89,7 +89,7 @@ class UserController extends Controller
         $user = User::find(Auth::id());
 
 
-        $file = $request->file('image'); //file取得
+        $file = $request->file('file'); //file取得
         if( !empty( $file ) ) {
             $upload = Cloudinary::upload ( $file->getRealPath(), [
                 // ここの設定は各々で数値をいじって下さい
@@ -100,7 +100,6 @@ class UserController extends Controller
                 "quality" => "auto",
                 "fetch_format" => "auto",
             ]);
-            dd($upload);
         }
 
         $user->sex = $request->input('sex');
