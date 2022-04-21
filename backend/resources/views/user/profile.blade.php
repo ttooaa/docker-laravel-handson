@@ -22,7 +22,11 @@
                 @method('PATCH')
                 <div class="formImg row mx-0">
                     <div class="col-6 d-flex justify-content-center">
-                        <img class="fileAvatar" id="preview">
+                        @if ($user->image_url)
+                            <img src="{{ $user->image_url }}" class="fileAvatar" id="preview">
+                        @else
+                            <img class="fileAvatar" id="preview">
+                        @endif
                     </div>
                     <div class="col-6">
                         <label for="file" class="fileLabel">ファイルを添付</label>

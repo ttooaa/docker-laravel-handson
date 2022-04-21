@@ -95,7 +95,6 @@ class UserController extends Controller
                 'height' => 300,
                 'width' => 300,
                 'crop' => "fill",
-                'radius' => 'max'
             ]);
         }
 
