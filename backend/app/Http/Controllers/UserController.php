@@ -88,18 +88,19 @@ class UserController extends Controller
         //編集の反映はこのメソッドを使う
         $user = User::find(Auth::id());
 
-
         $file = $request->file('file'); //file取得
         if( !empty( $file ) ) {
-            $upload = Cloudinary::upload ( $file->getRealPath(), [
+            $uploadedFileUrl = Cloudinary::upload ( $file->getRealPath(), [
                 // ここの設定は各々で数値をいじって下さい
-                "height" => 800,
-                "width" => 560,
+                "height" => 96,
+                "width" => 96,
                 "crop" => "fit",
                 "border" => "20px_solid_rgb:ffffff",
                 "quality" => "auto",
                 "fetch_format" => "auto",
-            ]);
+            ])->getSecurePath();;
+
+            dd($uploadedFileUrl);
         }
 
         $user->sex = $request->input('sex');
