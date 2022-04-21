@@ -92,14 +92,14 @@ class UserController extends Controller
         if( !empty( $file ) ) {
             $uploadedFile = Cloudinary::upload ( $file->getRealPath(), [
                 'folder' => 'KYONOWADAI',
-                'height' => 96,
-                'width' => 96,
+                'height' => 300,
+                'width' => 300,
                 'crop' => "fill",
                 'radius' => 'max'
             ]);
         }
 
-        $user->image_url = $uploadedFile->getSecrePath();
+        $user->image_url = $uploadedFile->getSecurePath();
         $user->public_id = $uploadedFile->getPublicId();
         $user->sex = $request->input('sex');
         $user->age = $request->age;
