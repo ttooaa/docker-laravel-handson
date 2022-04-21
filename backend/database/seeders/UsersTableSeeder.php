@@ -28,7 +28,6 @@ class UsersTableSeeder extends Seeder
                 'age' => '20',
                 'hobby' => '釣り',
                 'profile' => '細身低身長',
-                'image' => 'http//:tanaka.co.jp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -42,7 +41,6 @@ class UsersTableSeeder extends Seeder
                 'age' => '23',
                 'hobby' => '釣り',
                 'profile' => '細身低身長',
-                'image' => 'http//:tanaka.co.jp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -56,7 +54,6 @@ class UsersTableSeeder extends Seeder
                 'age' => '23',
                 'hobby' => '釣り',
                 'profile' => '細身低身長',
-                'image' => 'http//:tanaka.co.jp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -70,7 +67,6 @@ class UsersTableSeeder extends Seeder
                 'age' => '23',
                 'hobby' => '釣り',
                 'profile' => '細身低身長',
-                'image' => 'http//:tanaka.co.jp',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]

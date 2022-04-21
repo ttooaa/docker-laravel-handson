@@ -28,7 +28,8 @@ class CreateUsersTable extends Migration
             $table->integer('age')->nullable();
             $table->string('hobby')->nullable();
             $table->string('profile')->nullable();
-            $table->string('image')->nullable();
+            $table->string('image_url')->nullable();
+            $table->string('public_id')->nullable();
             $table->timestamps();
         });
     }

@@ -91,7 +91,6 @@ class UserController extends Controller
         $file = $request->file('file'); //file取得
         if( !empty( $file ) ) {
             $uploadedFile = Cloudinary::upload ( $file->getRealPath(), [
-                // ここの設定は各々で数値をいじって下さい
                 'folder' => 'KYONOWADAI',
                 'height' => 96,
                 'width' => 96,
@@ -100,7 +99,8 @@ class UserController extends Controller
             ]);
         }
 
-        $user->image = $uploadedFile;
+        $user->image_url = $uploadedFile->getSecrePath();
+        $user->public_id = $uploadedFile->getPublicId();
         $user->sex = $request->input('sex');
         $user->age = $request->age;
         $user->prefecture_id = $request->prefecture_id;
