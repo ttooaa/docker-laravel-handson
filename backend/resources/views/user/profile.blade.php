@@ -20,6 +20,7 @@
             <form action="{{ route('user.update', Auth::id()) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PATCH')
+                
                 <div class="formImg row mx-0">
                     <div class="col-6 d-flex justify-content-center">
                         @if ($user->image_url)
