@@ -85,7 +85,6 @@ class UserController extends Controller
      */
     public function update(Request $request)
     {
-        //編集の反映はこのメソッドを使う
         $user = User::find(Auth::id());
 
         $file = $request->file('file');
