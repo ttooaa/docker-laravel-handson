@@ -88,7 +88,7 @@ class UserController extends Controller
         //編集の反映はこのメソッドを使う
         $user = User::find(Auth::id());
 
-        $file = $request->file('file'); //file取得
+        $file = $request->file('file');
         if( !empty( $file ) ) {
             $uploadedFile = Cloudinary::upload ( $file->getRealPath(), [
                 'folder' => 'KYONOWADAI',
