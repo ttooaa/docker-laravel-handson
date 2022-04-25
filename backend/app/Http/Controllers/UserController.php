@@ -10,9 +10,9 @@ use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class UserController extends Controller
 {
-    // 登録してあるユーザーかどうか
     public function __construct()
     {
+        // 登録してあるユーザーかどうか
         $this->middleware('auth');
     }
 
