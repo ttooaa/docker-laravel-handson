@@ -9,6 +9,7 @@ class RoomController extends Controller
 {
     public function __construct()
     {
+        // 登録してあるユーザーかどうか
         $this->middleware('auth');
     }
 
