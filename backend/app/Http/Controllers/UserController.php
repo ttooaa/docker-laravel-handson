@@ -84,7 +84,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(UserPostRequest $request)
     {
         $user = User::find(Auth::id());
 
@@ -96,10 +96,11 @@ class UserController extends Controller
                 'width' => 300,
                 'crop' => "fill",
             ]);
+
+            $user->image_url = $uploadedFile->getSecurePath();
+            $user->public_id = $uploadedFile->getPublicId();
         }
 
-        $user->image_url = $uploadedFile->getSecurePath();
-        $user->public_id = $uploadedFile->getPublicId();
         $user->sex = $request->input('sex');
         $user->age = $request->age;
         $user->prefecture_id = $request->prefecture_id;
