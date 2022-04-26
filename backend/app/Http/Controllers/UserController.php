@@ -5,6 +5,7 @@ use App\Models\User;
 use App\Models\Prefecture;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\Http\Requests\UserPostRequest;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 
