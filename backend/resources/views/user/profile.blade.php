@@ -8,7 +8,7 @@
 @section('position-4', 'linkPosition')
 
 @section('content')
-{{-- <section id="back" style="height:1150px;""> --}}
+
 <section id="back">
     <div class="formScr">
         <div  class="formSize">
@@ -20,7 +20,7 @@
             <form action="{{ route('user.update', Auth::id()) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PATCH')
-                
+
                 <div class="formImg row mx-0">
                     <div class="col-6 d-flex justify-content-center">
                         @if ($user->image_url)
