@@ -33,7 +33,6 @@
                         <label for="file" class="fileLabel">ファイルを添付</label>
                         <input type="file" name="file" id="file" class="fileInput" accept="image/png, image/jpeg" onchange="previewFile(this);">
                         <p class="fileCaution mb-0">※画像は横長だとしても中央を基準に正方形に切り取られます。</p>
-                        <p class="fileCaution m-0">※画像サイズは1MB以下で指定してください。</p>
                     </div>
                 </div>
 

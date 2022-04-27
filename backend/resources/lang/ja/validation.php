@@ -158,6 +158,10 @@ return [
         "password" => "パスワード",
         "password_confirmation" => "パスワード(確認用)",
         "email" => "メールアドレス",
+        "sex" => "性別",
+        "age" => "年齢",
+        "hobby" => "趣味",
+        "profile" => "自己紹介文"
     ],
 
 ];

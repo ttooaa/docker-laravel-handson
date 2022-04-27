@@ -24,7 +24,11 @@ class UserPostRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'sex' => 'required',
+            'age' => 'required',
+            'prefecture_id' => 'required',
+            'hobby' => 'string',
+            'profile' => 'string'
         ];
     }
 }
