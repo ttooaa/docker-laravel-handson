@@ -27,8 +27,8 @@ class UserPostRequest extends FormRequest
             'sex' => 'required',
             'age' => 'required',
             'prefecture_id' => 'required',
-            'hobby' => 'string',
-            'profile' => 'string'
+            'hobby' => 'string|max:30',
+            'profile' => 'string|max:400'
         ];
     }
 }
