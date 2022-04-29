@@ -36,8 +36,6 @@ Route::middleware(['verified'])->group(function(){
 // Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
 Route::get('/join', [RoomController::class, 'index'])->name('join');
 
-// Route::get('/users/profile', [UserController::class, 'show'])->name('profile');
-
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -45,10 +43,6 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('/pages.home');
 })->name('kyonowadai');
-
-Route::get('/home', function () {
-    return view('home');
-});
 
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry_input');
