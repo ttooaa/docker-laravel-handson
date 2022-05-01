@@ -34,6 +34,7 @@ Route::middleware(['verified'])->group(function(){
 });
 
 // Route::get('/join', [App\Http\Controllers\HomeController::class, 'index'])->name('join');
+
 Route::get('/join', [RoomController::class, 'index'])->name('join');
 
 Route::get('/welcome', function () {
