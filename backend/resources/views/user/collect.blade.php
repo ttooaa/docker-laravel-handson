@@ -58,6 +58,7 @@
                         <label for="runTime" class="label-head mt-5">開催時間</label>
                         <div class="input-head">
                             <select id="runTime" class="formTextTitle mt-5" style="width: 230px;" name="genre" id="">
+                                <option value="15">10分</option>
                                 <option value="15">15分</option>
                                 <option value="30">30分</option>
                                 <option value="45">45分</option>
