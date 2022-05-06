@@ -14,6 +14,7 @@
             <h1 class="formTitle">募集内容を入力してください</h1>
 
             <form method="POST" action="" enctype="multipart/form-data">
+            @csrf
 
                 <div class="form-head formPb">
                     <label class="label-head labelWidth my-1">タイトル<span class="surely">必須</span></label>
