@@ -17,6 +17,17 @@
             @else
                 <h1 class="formTitle">自己紹介の編集</h1>
             @endempty
+
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <form action="{{ route('user.update', Auth::id()) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PATCH')

@@ -101,7 +101,7 @@ class UserController extends Controller
             $user->public_id = $uploadedFile->getPublicId();
         }
 
-        $user->sex = $request->input('sex');
+        $user->sex = $request->sex;
         $user->age = $request->age;
         $user->prefecture_id = $request->prefecture_id;
         $user->hobby = $request->hobby;
