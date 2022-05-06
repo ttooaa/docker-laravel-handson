@@ -26,6 +26,9 @@ Route::middleware(['verified'])->group(function(){
     Route::get('/collect', function () {
         return view('user.collect');
     });
+
+    Route::post('/collect', [RoomController::class, 'update'])->name('collected');
+
     Route::get('/status', function () {
         return view('user.status');
     });
