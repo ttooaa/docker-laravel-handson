@@ -4,7 +4,7 @@
 @auth
     <ul class="header-ul">
         <li><a  class="nav-link text-dark @yield('position-1') " href="{{ route('join') }}">参加する</a></li>
-        <li><a  class="nav-link text-dark @yield('position-2')" href="{{ url('/collect') }}">募集する</a></li>
+        <li><a  class="nav-link text-dark @yield('position-2')" href="{{ route('collect') }}">募集する</a></li>
         <li><a  class="nav-link text-dark @yield('position-3')" href="{{ url('/status') }}">ステータス</a></li>
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link text-dark dropdown-toggle @yield('position-4')" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

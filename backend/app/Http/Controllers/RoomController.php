@@ -18,4 +18,14 @@ class RoomController extends Controller
         $rooms = Room::orderBy('created_at', 'desc')->paginate(3);
         return view('application.join', compact('rooms'));
     }
+
+    public function view()
+    {
+        return view('user.collect');
+    }
+
+    public function update(Request $request)
+    {
+        
+    }
 }

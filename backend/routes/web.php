@@ -23,9 +23,7 @@ Route::middleware(['verified'])->group(function(){
     // Route::get('profile', [UserController::class, 'edit'])->name('profile');
     // Route::post('profile/{progile}/post', [UserController::class, 'update'])->name('update');
 
-    Route::get('/collect', function () {
-        return view('user.collect');
-    });
+    Route::get('/collect', [RoomController::class, 'view'])->name('collect');
 
     Route::post('/collect', [RoomController::class, 'update'])->name('collected');
 
