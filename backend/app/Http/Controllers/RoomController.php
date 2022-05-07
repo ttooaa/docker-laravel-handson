@@ -26,6 +26,6 @@ class RoomController extends Controller
 
     public function update(Request $request)
     {
-        
+        // ルーム内容をデータベースに登録
     }
 }
