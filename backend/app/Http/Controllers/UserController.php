@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 use App\Http\Requests\UserPostRequest;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
-
 class UserController extends Controller
 {
     public function __construct()
