@@ -44,9 +44,11 @@ Route::get('/', function () {
 Route::get('/inquiry/input', function () {
     return view('pages.inquiry_input');
 });
+
 Route::get('/inquiry/compleate', function () {
     return view('pages.inquiry_compleate');
 });
+
 Route::get('/user/compleate', function () {
     return view('pages.user_compleate');
 });
