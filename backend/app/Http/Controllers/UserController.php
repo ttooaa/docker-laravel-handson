@@ -93,7 +93,7 @@ class UserController extends Controller
                 'folder' => 'KYONOWADAI',
                 'height' => 300,
                 'width' => 300,
-                'crop' => "fill",
+                'crop' => 'fill',
             ]);
 
             $user->image_url = $uploadedFile->getSecurePath();

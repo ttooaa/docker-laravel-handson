@@ -37,10 +37,6 @@ Route::middleware(['verified'])->group(function(){
 
 Route::get('/join', [RoomController::class, 'index'])->name('join');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
 Route::get('/', function () {
     return view('/pages.home');
 })->name('kyonowadai');
