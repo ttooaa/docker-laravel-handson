@@ -13,7 +13,7 @@
         <div  class="formSize">
             <h1 class="formTitle">募集内容を入力してください</h1>
 
-            <form action="{{ route('collected') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('collected') }}" method="POST">
             @csrf
 
                 <div class="form-head formPb">
