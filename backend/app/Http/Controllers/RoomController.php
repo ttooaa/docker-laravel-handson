@@ -28,6 +28,11 @@ class RoomController extends Controller
     {
         // ルーム内容をデータベースに登録
         $collect = new Room();
-        
+        $collect->title = $request->title;
+        $collect->genre = $request->genre;
+        $collect->title = $request->title;
+        $collect->title = $request->title;
+        $collect->title = $request->title;
+        $collect->title = $request->title;
     }
 }
