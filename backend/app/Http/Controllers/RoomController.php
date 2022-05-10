@@ -33,6 +33,5 @@ class RoomController extends Controller
         $collect->title = $request->title;
         $collect->title = $request->title;
         $collect->title = $request->title;
-        $collect->title = $request->title;
     }
 }
