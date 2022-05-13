@@ -30,9 +30,9 @@ class CreateRoomsTable extends Migration
             $table->integer('genre');
             $table->integer('maximum_number_of_people');
             $table->integer('number_of_people');
-            $table->string('detail')->nullable();
             $table->string('start_time');
             $table->string('hold_time');
+            $table->string('detail')->nullable();
             $table->timestamps();
         });
     }

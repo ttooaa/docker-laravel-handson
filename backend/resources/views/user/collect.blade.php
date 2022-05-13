@@ -31,6 +31,15 @@
                 </div>
 
                 <div class="form-mail mt-3">
+                    <label class="label-head labelWidth">最大人数<span class="surely">必須</span></label>
+                    <div class="input-head">
+                        <select class="formTextTitle" style="width: 300px;" name="maximum_number_of_people" id="">
+                            <option value="1">誰でも可</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-mail mt-3">
                     <label>時間指定<span class="surely">必須</span></label>
                     <p class="timeCaution">※開始時間で選択した時間が経過後、開催時間が開始されます。</p>
                     <div class="timeBox">
