@@ -34,7 +34,9 @@
                     <label class="label-head labelWidth">最大人数<span class="surely">必須</span></label>
                     <div class="input-head">
                         <select class="formTextTitle" style="width: 300px;" name="maximum_number_of_people" id="">
-                            <option value="1">誰でも可</option>
+                            <option value="2">2人</option>
+                            <option value="3">3人</option>
+                            <option value="4">4人</option>
                         </select>
                     </div>
                 </div>
@@ -45,7 +47,7 @@
                     <div class="timeBox">
                         <label for="startTime" class="label-head">開始時間</label>
                         <div class="input-head">
-                            <select id="startTime" class="formTextTitle" style="width: 230px;" name="genre" id="">
+                            <select id="startTime" class="formTextTitle" style="width: 230px;" name="start_time" id="">
                                 <option value="0">すぐ開始</option>
                                 <option value="5">5分後</option>
                                 <option value="10">10分後</option>
@@ -67,7 +69,7 @@
                         </div>
                         <label for="runTime" class="label-head mt-5">開催時間</label>
                         <div class="input-head">
-                            <select id="runTime" class="formTextTitle mt-5" style="width: 230px;" name="genre" id="">
+                            <select id="runTime" class="formTextTitle mt-5" style="width: 230px;" name="hold_time" id="">
                                 <option value="15">10分</option>
                                 <option value="15">15分</option>
                                 <option value="30">30分</option>
