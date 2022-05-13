@@ -26,6 +26,12 @@
                     <div class="input-head">
                         <select class="formTextTitle" style="width: 300px;" name="genre" id="">
                             <option value="1">誰でも可</option>
+                            <option value="1">まもなく開始</option>
+                            <option value="1">参加人数が多い順</option>
+                            <option value="1">2：2　(男2：女2)希望</option>
+                            <option value="1">1：1　(男1：女1)希望</option>
+                            <option value="1">男性募集枠</option>
+                            <option value="1">女性募集枠</option>
                         </select>
                     </div>
                 </div>
