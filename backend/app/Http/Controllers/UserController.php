@@ -106,7 +106,7 @@ class UserController extends Controller
         $user->hobby = $request->hobby;
         $user->profile = $request->profile;
 
-        $user -> save();
+        $user->save();
 
         return redirect()->route('join');
     }

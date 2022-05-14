@@ -28,12 +28,16 @@ class RoomController extends Controller
     {
         // ルーム内容をデータベースに登録
         $collect = new Room();
-        $collect->host_id = $request->Auth::id();
+        // $collect->host_id = $request->Auth::id();
         $collect->title = $request->title;
         $collect->genre = $request->genre;
         $collect->maximum_number_of_people = $request->maximum_number_of_people;
         $collect->start_time = $request->start_time;
         $collect->hold_time = $request->hold_time;
         $collect->ditail = $request->ditail;
+
+        $collect->save();
+
+        return redirect('/collect');
     }
 }
