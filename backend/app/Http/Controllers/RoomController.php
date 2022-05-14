@@ -34,10 +34,10 @@ class RoomController extends Controller
         $collect->maximum_number_of_people = $request->maximum_number_of_people;
         $collect->start_time = $request->start_time;
         $collect->hold_time = $request->hold_time;
-        $collect->ditail = $request->ditail;
+        $collect->detail = $request->detail;
 
         $collect->save();
 
-        return redirect('/collect');
+        return redirect('/join');
     }
 }
