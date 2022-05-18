@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes(['verify' => true]);
 
-
 Route::middleware(['verified'])->group(function(){
     Route::resource('user', UserController::class);
     // Route::get('profile', [UserController::class, 'edit'])->name('profile');
