@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+
 Auth::routes(['verify' => true]);
 
 Route::middleware(['verified'])->group(function(){
