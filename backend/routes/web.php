@@ -30,6 +30,7 @@ Route::middleware(['verified'])->group(function(){
     Route::get('/status', function () {
         return view('user.status');
     });
+    
     //メール認証ができたユーザーのみ実行できるルート
 });
 
