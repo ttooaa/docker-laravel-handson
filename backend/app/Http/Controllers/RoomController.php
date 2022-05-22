@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Room;
+
 
 class RoomController extends Controller
 {
@@ -27,8 +29,11 @@ class RoomController extends Controller
     public function update(Request $request)
     {
         // ルーム内容をデータベースに登録
+        // $user = User::find(Auth::id());
+        // dd($user);
+
         $collect = new Room();
-        // $collect->host_id = $request->Auth::id();
+        $collect->host_id = $request->Auth::id();
         $collect->title = $request->title;
         $collect->genre = $request->genre;
         $collect->maximum_number_of_people = $request->maximum_number_of_people;
