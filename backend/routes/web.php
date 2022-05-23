@@ -22,7 +22,6 @@ Route::middleware(['verified'])->group(function(){
     Route::resource('user', UserController::class);
     // Route::get('profile', [UserController::class, 'edit'])->name('profile');
     // Route::post('profile/{progile}/post', [UserController::class, 'update'])->name('update');
-
     Route::get('/collect', [RoomController::class, 'view'])->name('collect');
 
     Route::post('/collected', [RoomController::class, 'update'])->name('collected');
