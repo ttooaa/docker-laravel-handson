@@ -48,6 +48,7 @@
                 <div class="row mt-3">
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
+                            <?php dd($room) ?>
                             @empty (!$room->user->image_url)
                                 <img class="col-lg-3 p-0 ms-3 avatar" src="{{ $room->user->image_url }}" alt="host">
                             @endempty
