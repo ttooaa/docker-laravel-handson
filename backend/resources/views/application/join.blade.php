@@ -48,8 +48,16 @@
                 <div class="row mt-3">
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
-                            
+
                             <img class="col-lg-3 p-0 ms-2 avatar" src="{{$room->host_id->users()->image_url}}" alt="host">
+
+                            
+                            @empty ($room->host_id->users()->image_url)
+                                {{-- <img class="col-lg-3 p-0 ms-3 avatar" src="{{ $room->user->image_url }}" alt="host"> --}}
+                                <img class="col-lg-3 p-0 ms-2 avatar" src="{{ $room->host_id->users()->image_url }}" alt="host">
+                            @else
+                                <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                            @endempty
 
                             @empty (!$room->member_1_id)
                                 <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
