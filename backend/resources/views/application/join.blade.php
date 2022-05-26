@@ -51,7 +51,6 @@
 
                             <img class="col-lg-3 p-0 ms-2 avatar" src="{{$room->host_id->users()->image_url}}" alt="host">
 
-                            
                             @empty ($room->host_id->users()->image_url)
                                 {{-- <img class="col-lg-3 p-0 ms-3 avatar" src="{{ $room->user->image_url }}" alt="host"> --}}
                                 <img class="col-lg-3 p-0 ms-2 avatar" src="{{ $room->host_id->users()->image_url }}" alt="host">
