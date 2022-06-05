@@ -1,5 +1,5 @@
 {{-- ヘッダー --}}
-<a href="{{ url('/') }}"><img class="header-logo" src="{{ asset('images/キョウのワダイ.jpeg') }}" alt="toppage"></a>
+<a href="{{ url('/') }}"><img class="header-logo" src="{{ asset('images/キョウのワダイ.jpeg') }}" alt="キョウのワダイ"></a>
 
 @auth
     <ul class="header-ul">
