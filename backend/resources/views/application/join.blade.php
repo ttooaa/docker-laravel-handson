@@ -54,7 +54,8 @@
                             @empty ($room->host_id)
                                 <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                             @else
-                                <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
+                                <img class="col-lg-3 p-0 ms-2 avatar" src="{{ 'https://res.cloudinary.com/kyonowadai/image/upload/v1653567319/KYONOWADAI/tfiwcbvvvs6nak56voan.png' }}" alt="host">
+
                             @endempty
 
                             @empty (!$room->member_1_id)
