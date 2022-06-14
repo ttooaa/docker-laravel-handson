@@ -49,6 +49,7 @@
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
 
+
                             {{-- <img class="col-lg-3 p-0 ms-2 avatar" src="{{$room->host_id}}" alt="host"> --}}
 
                             @empty ($room->host_id)
