@@ -13,6 +13,6 @@ class Topic extends Model
 
     public function rooms()
     {
-        return $this->belongsToMany('App\Http\Models\Room');
+        return $this->belongsToMany('App\Models\Room');
     }
 }

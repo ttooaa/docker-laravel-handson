@@ -13,6 +13,6 @@ class Prefecture extends Model
 
     public function users()
     {
-        return $this->hasMany('App\Http\Models\User');
+        return $this->hasMany('App\Models\User');
     }
 }

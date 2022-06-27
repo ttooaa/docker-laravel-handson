@@ -14,11 +14,11 @@ class Room extends Model
 
     public function users()
     {
-        return $this->belongsToMany('App\Http\Models\User');
+        return $this->belongsToMany('App\Models\User', 'host_id');
     }
 
     public function topics()
     {
-        return $this->belongsToMany('App\Http\Models\Topic');
+        return $this->belongsToMany('App\Models\Topic');
     }
 }

@@ -44,11 +44,11 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function prefectures()
     {
-        return $this->belongsTo('App\Http\Models\Prefecture');
+        return $this->belongsTo('App\Models\Prefecture');
     }
 
     public function rooms()
     {
-        return $this->belongsToMany('App\Http\Models\Room');
+        return $this->belongsToMany('App\Models\Room');
     }
 }
