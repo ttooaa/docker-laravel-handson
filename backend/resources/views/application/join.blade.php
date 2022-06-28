@@ -50,7 +50,8 @@
                         <div class="row">
 
                             {{-- <img class="col-lg-3 p-0 ms-2 avatar" src="{{$room->host_id}}" alt="host"> --}}
-                            {{dd($room->users->image_url)}}
+                            {{dd($room->users()->image_url)}}
+                            
                             @empty ($room->host_id)
                                 <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
                             @else
