@@ -50,6 +50,7 @@
                         <div class="row">
 
                             {{-- {{dd($room->users->image_url)}} --}}
+
                             
 
                             @empty ($room->host_id)
