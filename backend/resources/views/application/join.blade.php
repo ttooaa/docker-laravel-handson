@@ -48,10 +48,7 @@
                 <div class="row mt-3">
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
-
                             {{-- {{dd($room->users->image_url)}} --}}
-
-                            
 
                             @empty ($room->host_id)
                                 <img class="col-lg-3 p-0 ms-2 avatar" src="{{ asset('images/丸-中.png') }}" alt="host">
