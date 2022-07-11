@@ -49,7 +49,6 @@
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
 
-                            
                             {{-- {{dd($room->users->image_url)}} --}}
 
                             @empty ($room->host_id)
