@@ -45,7 +45,6 @@
                     <h2 class="m-0">{{ $room->title }}</h2> {{-- title部分 --}}
                 </div>
 
-                
                 <div class="row mt-3">
                     <div class="col-xl-6 col-md-8 align-self-center"> {{-- 写真表示 --}}
                         <div class="row">
