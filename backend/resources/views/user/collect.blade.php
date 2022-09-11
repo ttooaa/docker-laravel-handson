@@ -16,7 +16,6 @@
             <form action="{{ route('collected', Auth::id()) }}" method="POST">
             @csrf
 
-            
                 <div class="form-head formPb">
                     <label class="label-head labelWidth my-1">タイトル<span class="surely">必須</span></label>
                     <input class="formTextTitle" type="text" name="title" placeholder="最大20文字まで">
